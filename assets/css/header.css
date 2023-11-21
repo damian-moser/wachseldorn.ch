@@ -142,7 +142,6 @@ header #dropdown #dropdown-container {
   width: 80%;
   padding: 20px 0;
   display: flex;
-  justify-content: space-between;
 }
 header #dropdown #dropdown-container #dropdown-content {
   width: 100%;
