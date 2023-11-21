@@ -3,10 +3,9 @@
 <div id="container">
      <div id="homeContainer">
           <h1 id="title">Willkommen in Wachseldorn</h1>
-          <a href="#news" id="homeBtn">News</a>
+          <a href="#news" id="homeBtn" class="btn">News</a>
      </div>
 </div>
-
 <main>
     <section id="news">
         <h1>Aktuelles</h1>
@@ -23,11 +22,14 @@
         if ($query->have_posts()) :
             while ($query->have_posts()) : $query->the_post();
                 ?>
-                <article style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>');" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                    <?php the_post_thumbnail(); ?>
                     <a href="<?php the_permalink(); ?>">
-                        <h2><?php the_title(); ?></h2>
-                        <div class="news-content">
-                            <?php the_content(); ?>
+                        <div class="news-container">
+                            <h2><?php the_title(); ?></h2>
+                            <div class="news-content">
+                                <?php the_excerpt(); ?>
+                            </div>
                         </div>
                     </a>
                 </article>
@@ -38,8 +40,11 @@
             echo 'Zurzeit gibt es keine Nachrichten';
         endif;
         echo '</div>';
-        echo '<a href="' . home_url() . '/aktuell' . '">Alle Beiträge anzeigen</a>';
-
+        ?>
+        <p id="go-to-news" title="Zu allen Nachrichten">
+            <a class="btn" href="<?php echo home_url() . '/aktuell'?>">Gehe zu allen Nachrichten →</a>
+        </p>
+        <?php
             if(have_posts()){
                 while(have_posts()){
                     the_post();
