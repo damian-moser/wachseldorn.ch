@@ -39,6 +39,7 @@
   gap: 1rem;
 }
 #news-container article {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
