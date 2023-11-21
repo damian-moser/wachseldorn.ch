@@ -1,0 +1,58 @@
+/* Footer */
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--c-green);
+}
+footer #footerDiv {
+  width: 80%;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+footer #footerDiv #linkToHome {
+  width: fit-content;
+}
+footer #footerDiv #linkToHome img {
+  width: 64px;
+}
+footer #footerDiv ul {
+  list-style-type: none;
+}
+footer #footerDiv .menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+footer #footerDiv .menu a {
+  color: #ffffff;
+}
+footer #footerDiv .menu > li > a:first-child {
+  font-size: 1.25rem;
+}
+footer #footerDiv .menu .sub-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+footer #footerDiv .menu .sub-menu li a:hover {
+  text-decoration: underline;
+}
+footer #footerDiv hr {
+  border-color: var(--c-white);
+}
+footer #footerDiv #footerRights {
+  display: flex;
+  justify-content: space-between;
+}
+footer #footerDiv #footerRights a, footer #footerDiv #footerRights p {
+  color: #ffffff;
+}
+footer #footerDiv #footerRights a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=footer.css.map */
