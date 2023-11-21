@@ -173,11 +173,11 @@ header{
       width: 80%;
       padding: 20px 0;
       display: flex;
+      justify-content: space-between;
 
       #dropdown-content{
         width: 100%;
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
         gap: 12px;
 
