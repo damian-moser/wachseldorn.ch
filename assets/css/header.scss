@@ -88,6 +88,7 @@ header{
         & > ul{
           display: flex;
           justify-content: space-between;
+          flex-wrap: wrap;
           gap: 1rem;
 
           .menu-item-has-children a::after{
