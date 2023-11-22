@@ -16,6 +16,13 @@ function toggleVisibility(element) { return element.style.visibility === "visibl
 
 function toggleFlex(element) { return element.style.display === "flex" ? 'none' : 'flex'; }
 
+document.addEventListener('click', event => {
+    const dropdown = document.getElementById('dropdown');
+    const buttons = document.querySelectorAll('header nav ul.menu li.menu-item-has-children');
+
+    (!Array.from(buttons).some(button => button.contains(event.target)) && !dropdown.contains(event.target)) ? closeDropdown() : null;
+});
+
 function changeMobileBars(mobileBars) {
     closeAllMobileMenus();
     mobileBars.classList.toggle("changeMobile");

@@ -89,55 +89,6 @@ header #header-content #wrapper nav > ul .menu-item-has-children.active a::after
   display: inline-block;
   vertical-align: middle;
 }
-header #header-content #wrapper #menu ul.menu > li.menu-item > a:first-of-type {
-  color: var(--f-c-black);
-  font-size: 1.25rem;
-  font-family: var(--f-medium);
-  width: 100%;
-  display: block;
-  position: relative;
-}
-header #header-content #wrapper #menu ul.menu > .menu-item-has-children > a {
-  border-bottom: 3px transparent solid;
-}
-header #header-content #wrapper #menu .menu-item-has-children > a:first-child::after {
-  content: url("../img/expand_more.svg");
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
-  right: 0;
-}
-header #header-content #wrapper #menu .menu-item-has-children.active > a:first-child::after {
-  content: url("../img/expand_less.svg");
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
-  right: 0;
-}
-header #header-content #wrapper #menu .sub-menu a {
-  font-size: 1rem;
-  width: 100%;
-  text-align: left;
-  color: var(--f-c-black);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-header #header-content #wrapper #menu .sub-menu a::after {
-  content: "↗";
-}
-header #header-content #wrapper #menu .menu {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-header #header-content #wrapper #menu .menu .menu-item-has-children ul {
-  flex-direction: column;
-  gap: 0.5rem;
-  margin: 1rem;
-  border-radius: 8px;
-}
 header #dropdown {
   z-index: 9999;
   position: absolute;
@@ -145,7 +96,7 @@ header #dropdown {
   justify-content: center;
   background-color: var(--c-yellow);
   user-select: none;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--box-shadow);
 }
 header #dropdown #dropdown-container {
   width: 80%;
@@ -177,6 +128,68 @@ header #dropdown #dropdown-container #closeMenu {
 }
 header #dropdown #dropdown-container #closeMenu:hover {
   opacity: 0.75;
+}
+
+#menu {
+  position: absolute;
+  background-color: var(--c-yellow);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  box-shadow: var(--box-shadow);
+}
+#menu #menu-content {
+  width: 80%;
+}
+#menu #menu-content ul.menu > li.menu-item > a:first-of-type {
+  color: var(--f-c-black);
+  font-size: 1.25rem;
+  font-family: var(--f-medium);
+  width: 100%;
+  display: block;
+  position: relative;
+}
+#menu #menu-content ul.menu > .menu-item-has-children > a {
+  border-bottom: 3px transparent solid;
+}
+#menu #menu-content .menu-item-has-children > a:first-child::after {
+  content: url("../img/expand_more.svg");
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  right: 0;
+}
+#menu #menu-content .menu-item-has-children.active > a:first-child::after {
+  content: url("../img/expand_less.svg");
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  right: 0;
+}
+#menu #menu-content .sub-menu a {
+  font-size: 1rem;
+  width: 100%;
+  text-align: left;
+  color: var(--f-c-black);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#menu #menu-content .sub-menu a::after {
+  content: "↗";
+}
+#menu #menu-content .menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#menu #menu-content .menu .menu-item-has-children ul {
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem;
+  border-radius: 8px;
 }
 
 @media only screen and (max-width: 900px) {
