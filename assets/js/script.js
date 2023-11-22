@@ -17,9 +17,17 @@ function toggleVisibility(element) { return element.style.visibility === "visibl
 function toggleFlex(element) { return element.style.display === "flex" ? 'none' : 'flex'; }
 
 function changeMobileBars(mobileBars) {
+    closeAllMobileMenus();
     mobileBars.classList.toggle("changeMobile");
     MOBILE_MENU.style.visibility = toggleVisibility(MOBILE_MENU);
     MOBILE_MENU.style.display = toggleFlex(MOBILE_MENU);
+}
+
+function closeAllMobileMenus(){
+    MOBILE_NAV_ITEMS.forEach(item => {
+        removeBorderBottom(item.querySelector('a'), 'mobile');
+        item.querySelector('ul.sub-menu').style.display = 'none';
+    });
 }
 
 function turnAllArrowsDown(items){
