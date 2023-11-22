@@ -67,6 +67,7 @@ header #header-content #wrapper #wappen #mobile .changeMobile #bar-bottom {
 header #header-content #wrapper nav li a {
   border-bottom: 3px #fff solid;
   color: var(--f-c-black);
+  display: flex;
 }
 header #header-content #wrapper nav li a:hover {
   border-bottom-color: var(--c-yellow) !important;
@@ -74,6 +75,7 @@ header #header-content #wrapper nav li a:hover {
 header #header-content #wrapper nav > ul {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 }
 header #header-content #wrapper nav > ul .menu-item-has-children a::after {
   content: url("../img/expand_more.svg");

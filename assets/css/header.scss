@@ -79,6 +79,7 @@ header{
         li a{
           border-bottom: 3px #fff solid;
           color: var(--f-c-black);
+          display: flex;
 
           &:hover{
             border-bottom-color: var(--c-yellow) !important;
@@ -88,6 +89,7 @@ header{
         & > ul{
           display: flex;
           justify-content: space-between;
+          gap: 1rem;
 
           .menu-item-has-children a::after{
             content: url('../img/expand_more.svg');
