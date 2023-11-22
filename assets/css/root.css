@@ -82,6 +82,10 @@ a {
   margin-top: 2rem;
 }
 
+.border-radius {
+  border-radius: 8px;
+}
+
 .btn {
   padding: 12px;
   background-color: var(--c-yellow);
