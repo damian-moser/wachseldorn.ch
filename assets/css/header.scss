@@ -59,25 +59,24 @@ header{
             transform-origin: left;
             transition: all 0.5s;
           }
+        }
+        .changeMobile #bar-top {
+          transform: rotate(45deg);
+        }
 
-          .changeMobile #bar-top {
-            transform: rotate(45deg);
-          }
+        .changeMobile #bar-middle {
+          transform: translateX(1rem);
+          opacity: 0;
+        }
 
-          .changeMobile #bar-middle {
-            transform: translateX(1rem);
-            opacity: 0;
-          }
-
-          .changeMobile #bar-bottom {
-            transform: rotate(-45deg);
-          }
+        .changeMobile #bar-bottom {
+          transform: rotate(-45deg);
         }
       }
 
       nav {
         li a{
-          border-bottom: 3px #fff solid;
+          border-bottom: 3px transparent solid;
           color: var(--f-c-black);
           display: flex;
 
@@ -116,7 +115,7 @@ header{
         }
 
         ul.menu > .menu-item-has-children > a{
-          border-bottom: 3px #ffffff solid;
+          border-bottom: 3px transparent solid;
         }
 
         .menu-item-has-children > a:first-child::after{

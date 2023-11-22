@@ -54,18 +54,18 @@ header #header-content #wrapper #wappen #mobile #bar-bottom {
   transform-origin: left;
   transition: all 0.5s;
 }
-header #header-content #wrapper #wappen #mobile .changeMobile #bar-top {
+header #header-content #wrapper #wappen .changeMobile #bar-top {
   transform: rotate(45deg);
 }
-header #header-content #wrapper #wappen #mobile .changeMobile #bar-middle {
+header #header-content #wrapper #wappen .changeMobile #bar-middle {
   transform: translateX(1rem);
   opacity: 0;
 }
-header #header-content #wrapper #wappen #mobile .changeMobile #bar-bottom {
+header #header-content #wrapper #wappen .changeMobile #bar-bottom {
   transform: rotate(-45deg);
 }
 header #header-content #wrapper nav li a {
-  border-bottom: 3px #fff solid;
+  border-bottom: 3px transparent solid;
   color: var(--f-c-black);
   display: flex;
 }
@@ -96,7 +96,7 @@ header #header-content #wrapper #menu ul.menu > li.menu-item > a:first-of-type {
   position: relative;
 }
 header #header-content #wrapper #menu ul.menu > .menu-item-has-children > a {
-  border-bottom: 3px #ffffff solid;
+  border-bottom: 3px transparent solid;
 }
 header #header-content #wrapper #menu .menu-item-has-children > a:first-child::after {
   content: url("../img/expand_more.svg");

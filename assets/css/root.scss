@@ -162,6 +162,13 @@ body {
   }
 }
 
+.border-bottom-desktop{
+  border-bottom-color: var(--c-yellow) !important;
+}
+.border-bottom-mobile{
+  border-bottom-color: var(--f-c-black) !important;
+}
+
 @media only screen and (max-width: 900px) {
   nav {
     display: none;
