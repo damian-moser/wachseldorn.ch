@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Header */
 header {
   user-select: none;
@@ -89,7 +90,7 @@ header #header-content #wrapper nav > ul .menu-item-has-children.active a::after
 }
 header #header-content #wrapper #menu ul.menu > li.menu-item > a:first-of-type {
   color: var(--f-c-black);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-family: var(--f-medium);
   width: 100%;
   display: block;
@@ -113,11 +114,16 @@ header #header-content #wrapper #menu .menu-item-has-children.active > a:first-c
   right: 0;
 }
 header #header-content #wrapper #menu .sub-menu a {
-  font-size: 1.15rem;
+  font-size: 1rem;
   width: 100%;
-  display: block;
   text-align: left;
   color: var(--f-c-black);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header #header-content #wrapper #menu .sub-menu a::after {
+  content: "↗";
 }
 header #header-content #wrapper #menu .menu {
   width: 100%;
@@ -128,7 +134,7 @@ header #header-content #wrapper #menu .menu {
 header #header-content #wrapper #menu .menu .menu-item-has-children ul {
   flex-direction: column;
   gap: 0.5rem;
-  margin: 1rem 0;
+  margin: 1rem;
   border-radius: 8px;
 }
 header #dropdown {
