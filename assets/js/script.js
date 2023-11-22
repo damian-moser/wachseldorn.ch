@@ -72,7 +72,7 @@ DESKTOP_NAV_ITEMS.forEach(item => {
 });
 
 MOBILE_NAV_ITEMS.forEach(item => {
-    item.addEventListener('click', (e) => {
+    item.querySelector('a').addEventListener('click', (e) => {
         e.preventDefault();
         const link = item.querySelector('a');
         item.querySelector('.sub-menu').style.display = toggleFlex(item.querySelector('.sub-menu'));
