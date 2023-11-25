@@ -21,6 +21,8 @@
   width: 100%;
   height: auto;
   border-radius: 8px;
+  max-height: 750px;
+  object-fit: contain;
 }
 #singe-post article .entry-content .post-content .wp-block-file {
   margin: 2rem 0;
