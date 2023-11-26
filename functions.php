@@ -1,4 +1,47 @@
 <?php
+function dmo140748_get_page_index(){
+    $current_page_index = 0;
+    foreach (get_pages() as $index => $page) {
+        if ($page->ID == get_the_ID()) {
+            $current_page_index = $index;
+            break;
+        }
+    }
+
+    return $current_page_index;
+}
+
+function dmo140748_get_prev_page(){
+    $pages = get_pages();
+    $current_page_index = dmo140748_get_page_index();
+
+    $prev = ($current_page_index > 0) ? $pages[$current_page_index - 1] : null;
+    if($prev){
+        echo '<a class="btn" href="' . get_permalink($prev->ID) . '">← ' . $prev->post_title . '</a>';
+    } else {
+        echo '<p></p>';
+    }
+}
+
+function dmo140748_get_next_page(){
+    $pages = get_pages();
+    $current_page_index = dmo140748_get_page_index();
+
+    $next = ($current_page_index < count($pages) - 1) ? $pages[$current_page_index + 1] : null;
+    if($next){
+        echo '<a class="btn" href="' . get_permalink($next->ID) . '">' . $next->post_title . ' →</a>';
+    } else {
+        echo '<p></p>';
+    }
+}
+
+function dmo140748_get_pagination(){
+    echo '<div class="pagination-control">';
+    echo dmo140748_get_prev_page();
+    echo dmo140748_get_next_page();
+    echo '</div>';
+}
+
 function dmo140748_theme_support() {
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
