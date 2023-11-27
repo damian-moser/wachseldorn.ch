@@ -86,11 +86,14 @@ add_action('after_setup_theme', 'dmo140748_theme_support');
 
 function dmo140748_register_styles() {
     $version = wp_get_theme()->get('Version');
-    wp_enqueue_style('dmo140748-style-root', get_template_directory_uri() . '/assets/css/root.css', array(), $version, 'all');
-    wp_enqueue_style('dmo140748-style-header', get_template_directory_uri() . '/assets/css/header.css', array(), $version, 'all');
-    wp_enqueue_style('dmo140748-style-footer', get_template_directory_uri() . '/assets/css/footer.css', array(), $version, 'all');
-    wp_enqueue_style('dmo140748-style-home', get_template_directory_uri() . '/assets/css/home.css', array(), $version, 'all');
-    wp_enqueue_style('dmo140748-style-single', get_template_directory_uri() . '/assets/css/single.css', array(), $version, 'all');
+    $dir = get_template_directory_uri() . '/assets/css/';
+
+    wp_enqueue_style('dmo140748-style-root', $dir . 'style.root.css', array(), $version, 'all');
+    wp_enqueue_style('dmo140748-style-header', $dir . 'style.header.css', array(), $version, 'all');
+    wp_enqueue_style('dmo140748-style-footer', $dir . 'style.footer.css', array(), $version, 'all');
+    wp_enqueue_style('dmo140748-style-front-page', $dir . 'style.front-page.css', array(), $version, 'all');
+    wp_enqueue_style('dmo140748-style-single', $dir . 'style.single.css', array(), $version, 'all');
+    wp_enqueue_style('dmo140748-style-wordpress', $dir . 'style.wordpress.css', array(), $version, 'all');
 }
 
 add_action('wp_enqueue_scripts', 'dmo140748_register_styles');

@@ -52,7 +52,6 @@
   max-width: 25%;
   height: auto;
   object-fit: contain;
-  max-height: 250px;
 }
 #news-container article a {
   flex: 1;
@@ -83,4 +82,4 @@
   }
 }
 
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=style.front-page.css.map */
