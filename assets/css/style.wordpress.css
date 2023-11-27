@@ -1,0 +1,75 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 24px 0;
+}
+main section {
+  width: 80%;
+}
+main section h1, main section h2, main section h3, main section h4, main section h5, main section h6 {
+  font-size: 2rem;
+  font-family: var(--f-bold);
+  margin: 1rem 0;
+}
+main section h2 {
+  font-size: 1.5rem;
+  margin: 0.75rem 0;
+}
+main section h3 {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+main section h4 {
+  margin: 0.3rem 0;
+}
+main section h5 {
+  font-size: 0.85rem;
+  margin: 0.25rem 0;
+}
+main section h6 {
+  font-size: 0.7rem;
+  margin: 0.2rem 0;
+}
+main section img {
+  border-radius: 8px;
+}
+main section table {
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+main section table thead {
+  border: none !important;
+}
+main section table thead tr {
+  background-color: var(--c-yellow);
+  text-align: left;
+  font-weight: bold;
+}
+main section table th, main section table td {
+  padding: 12px 15px !important;
+  border: none !important;
+}
+main section table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+main section table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+main section table tbody tr:last-of-type {
+  border-bottom: 2px solid var(--c-yellow);
+}
+
+.btn {
+  padding: 12px;
+  background-color: var(--c-yellow);
+  border-radius: 8px;
+  color: var(--f-c-black);
+  transition: var(--transition-back-color);
+}
+.btn:hover {
+  background-color: var(--c-h-yellow);
+}
+
+/*# sourceMappingURL=style.wordpress.css.map */
