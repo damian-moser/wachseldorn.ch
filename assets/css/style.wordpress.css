@@ -60,6 +60,26 @@ main section table tbody tr:nth-of-type(even) {
 main section table tbody tr:last-of-type {
   border-bottom: 2px solid var(--c-yellow);
 }
+main section .wp-block-file a {
+  padding: 12px;
+  background-color: var(--c-green);
+  transition: var(--transition-back-color);
+  font-size: 1rem;
+  border-radius: 2em;
+  color: #ffffff;
+}
+main section .wp-block-file a:hover {
+  opacity: 1;
+  background-color: var(--c-h-green);
+}
+main section .wp-block-file .wp-element-button {
+  text-decoration: underline;
+  background-color: var(--c-yellow);
+  color: var(--f-c-black);
+}
+main section .wp-block-file .wp-element-button:hover {
+  background-color: var(--c-h-yellow);
+}
 
 .btn {
   padding: 12px;

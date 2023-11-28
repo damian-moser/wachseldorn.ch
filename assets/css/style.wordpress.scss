@@ -73,6 +73,32 @@ main {
         }
       }
     }
+
+    .wp-block-file{
+      a{
+        padding: 12px;
+        background-color: var(--c-green);
+        transition: var(--transition-back-color);
+        font-size: 1rem;
+        border-radius: 2em;
+        color: #ffffff;
+
+        &:hover{
+          opacity: 1;
+          background-color: var(--c-h-green);
+        }
+      }
+
+      .wp-element-button{
+        text-decoration: underline;
+        background-color: var(--c-yellow);
+        color: var(--f-c-black);
+
+        &:hover{
+          background-color: var(--c-h-yellow);
+        }
+      }
+    }
   }
 }
 
