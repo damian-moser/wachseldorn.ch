@@ -7,10 +7,9 @@ Template Name: Archivseite
 <?php get_header(); ?>
 
 <main>
+    <?php dmo140748_get_pagination(); ?>
     <section>
-
         <?php
-        dmo140748_get_pagination();
             $args = array(
                 'post_type' => 'post',
                 'posts_per_page' => -1,

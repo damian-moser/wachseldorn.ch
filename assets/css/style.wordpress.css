@@ -2,10 +2,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 24px 0;
+  margin: 1rem 0;
 }
 main section {
   width: 80%;
+  margin: 4rem 0;
 }
 main section h1, main section h2, main section h3, main section h4, main section h5, main section h6 {
   font-size: 2rem;

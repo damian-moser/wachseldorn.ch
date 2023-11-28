@@ -1,10 +1,9 @@
 <?php get_header(); ?>
 
 <main>
+     <?php dmo140748_get_pagination(); ?>
      <section>
           <?php
-          dmo140748_get_pagination();
-
           if(have_posts()){
                     while(have_posts()){
                          the_post();
