@@ -17,6 +17,7 @@ Template Name: Archivseite
             );
 
             $query = new WP_Query($args);
+            echo '<h1>Neuigkeiten</h1>';
             echo '<div id="news-container">';
             if ($query->have_posts()) :
                 while ($query->have_posts()) : $query->the_post();
