@@ -22,6 +22,12 @@ main section a:hover {
 main section a::after {
   content: "➚";
 }
+main section #news-container a:hover {
+  text-decoration: none;
+}
+main section #news-container a::after {
+  content: "";
+}
 main section h1, main section h2, main section h3, main section h4, main section h5, main section h6 {
   font-size: 2rem;
   color: var(--f-c-black);
@@ -104,8 +110,12 @@ main section .wp-block-file .wp-element-button:hover {
   color: var(--f-c-black);
   transition: var(--transition-back-color);
 }
+.btn::after {
+  content: "";
+}
 .btn:hover {
   background-color: var(--c-h-yellow);
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.wordpress.css.map */

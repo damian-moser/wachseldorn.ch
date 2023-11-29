@@ -25,6 +25,15 @@ main {
       }
     }
 
+    #news-container a{
+      &:hover{
+        text-decoration: none;
+      }
+      &::after{
+        content: '';
+      }
+    }
+
     h1, h2, h3, h4, h5, h6 {
       font-size: 2rem;
       color: var(--f-c-black);
@@ -128,7 +137,12 @@ main {
   color: var(--f-c-black);
   transition: var(--transition-back-color);
 
+  &::after{
+    content: '';
+  }
+
   &:hover{
     background-color: var(--c-h-yellow);
+    text-decoration: none;
   }
 }
