@@ -29,7 +29,7 @@ main {
       }
     }
 
-    #news-container a{
+    #news-container a, #filter-form a{
       &:hover{
         text-decoration: none;
       }
