@@ -9,6 +9,9 @@ main section {
   width: 80%;
   margin: 2.5rem 0;
 }
+main section ol, main section ul {
+  margin-left: 2rem;
+}
 main section p {
   color: var(--f-c-black);
   margin: 0.75rem 0;

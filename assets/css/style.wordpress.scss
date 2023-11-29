@@ -8,6 +8,10 @@ main {
     width: 80%;
     margin: 2.5rem 0;
 
+    ol, ul{
+      margin-left: 2rem;
+    }
+
     p{
       color: var(--f-c-black);
       margin: 0.75rem 0;
