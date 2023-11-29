@@ -1,3 +1,4 @@
+@charset "UTF-8";
 main {
   display: flex;
   flex-direction: column;
@@ -8,8 +9,22 @@ main section {
   width: 80%;
   margin: 2.5rem 0;
 }
+main section p {
+  color: var(--f-c-black);
+  margin: 0.75rem 0;
+}
+main section a {
+  color: var(--f-c-black);
+}
+main section a:hover {
+  text-decoration: underline;
+}
+main section a::after {
+  content: "➚";
+}
 main section h1, main section h2, main section h3, main section h4, main section h5, main section h6 {
   font-size: 2rem;
+  color: var(--f-c-black);
   font-family: var(--f-bold);
   margin: 1rem 0;
 }

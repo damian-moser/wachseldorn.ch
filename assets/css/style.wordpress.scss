@@ -8,8 +8,26 @@ main {
     width: 80%;
     margin: 2.5rem 0;
 
+    p{
+      color: var(--f-c-black);
+      margin: 0.75rem 0;
+    }
+
+    a{
+      color: var(--f-c-black);
+
+      &:hover{
+        text-decoration: underline;
+      }
+
+      &::after{
+        content: '➚';
+      }
+    }
+
     h1, h2, h3, h4, h5, h6 {
       font-size: 2rem;
+      color: var(--f-c-black);
       font-family: var(--f-bold);
       margin: 1rem 0;
     }
