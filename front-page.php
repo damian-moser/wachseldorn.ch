@@ -42,7 +42,7 @@
         echo '</div>';
         ?>
         <p id="go-to-news" title="Zu allen Nachrichten">
-            <a class="btn" href="<?php echo home_url() . '/aktuell'?>">Gehe zu allen Nachrichten →</a>
+            <a class="btn" href="<?php echo home_url() . '/neuigkeiten'?>">Alle Nachrichten →</a>
         </p>
         <?php
             if(have_posts()){
