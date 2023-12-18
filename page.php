@@ -1,6 +1,14 @@
 <?php get_header(); ?>
 
 <main>
+     <div class="page-banner">
+          <?php
+               if (has_post_thumbnail()) {
+                    the_post_thumbnail();
+               }
+          ?>
+     </div>
+
      <?php dmo140748_get_pagination(); ?>
      <section>
           <h1><?php the_title(); ?></h1>
