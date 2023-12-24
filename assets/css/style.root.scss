@@ -132,6 +132,10 @@ a{
   justify-content: space-between;
   gap: 1rem;
   margin-bottom: 1rem;
+
+  a {
+    text-align: center;
+  }
 }
 
 body {

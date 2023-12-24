@@ -104,3 +104,8 @@ MOBILE_NAV_ITEMS.forEach(item => {
 });
 
 CLOSE_BUTTON.addEventListener('click', () => closeDropdown());
+
+const element = document.querySelector('[aria-current="page"]').parentElement.parentElement.parentElement.querySelector("a");
+if (element) {
+    addBorderBottom(element, 'desktop');
+}

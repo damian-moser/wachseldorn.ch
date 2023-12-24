@@ -47,11 +47,10 @@
 }
 #news-container article img {
   flex: 1;
-  border-bottom-left-radius: 8px;
-  border-top-left-radius: 8px;
+  border-radius: 8px 0 0 8px;
   max-width: 25%;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
 }
 #news-container article a {
   flex: 1;

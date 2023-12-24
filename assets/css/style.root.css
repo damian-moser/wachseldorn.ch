@@ -121,6 +121,9 @@ a {
   gap: 1rem;
   margin-bottom: 1rem;
 }
+.pagination-control a {
+  text-align: center;
+}
 
 body {
   max-width: 100vw;
