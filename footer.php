@@ -4,7 +4,7 @@
                 <a href="<?php echo home_url(); ?>" id="home-link">
                     <img src="<?php echo get_template_directory_uri() . "/assets/img/" ?>wachseldorn.svg" alt="Home">
                 </a>
-                <a id="admin" href="<?php echo home_url() . "/wp-admin/"; ?>">Login</a>
+                <a id="admin" href="<?php echo home_url() . "/wp-admin/"; ?>" target="_blank" rel="noopener">Login</a>
             </div>
             <?php
                 wp_nav_menu(array(

@@ -9,6 +9,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 #bg-image #welcome {
   display: flex;
