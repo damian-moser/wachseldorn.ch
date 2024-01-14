@@ -139,6 +139,7 @@ body #root {
   flex-direction: column;
   justify-content: space-between;
   max-width: 1400px;
+  width: 100%;
 }
 
 #notFound {
