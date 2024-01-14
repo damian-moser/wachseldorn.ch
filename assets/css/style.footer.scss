@@ -5,18 +5,33 @@ footer{
   justify-content: center;
   background-color: var(--c-green);
 
-  #footerDiv{
+  #footer{
     width: 80%;
     padding: 24px 0;
     display: flex;
     flex-direction: column;
     gap: 24px;
 
-    #linkToHome{
-      width: fit-content;
+    #footer-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
 
-      img{
-        width: 64px;
+      #home-link img {
+        width: 48px;
+      }
+
+      #admin {
+        color: #ffffff;
+
+        &::after {
+          content: "↗";
+        }
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
 
@@ -53,9 +68,11 @@ footer{
       border-color: var(--c-white);
     }
 
-    #footerRights{
+    #footer-cred{
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
 
       a, p{
         color: #ffffff;

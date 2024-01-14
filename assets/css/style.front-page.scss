@@ -1,5 +1,5 @@
 /* HOMEPAGE */
-#container{
+#bg-image{
   width: 100%;
   background-image: url("../img/landschaft.jpg");
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
 
-  #homeContainer{
+  #welcome{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +25,7 @@
       text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
     }
 
-    #homeBtn{
+    #news-btn{
       padding: 1rem 2rem;
       font-family: var(--f-medium);
       font-size: 1.25rem;

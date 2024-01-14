@@ -142,12 +142,22 @@ body {
   max-width: 100vw;
   min-height: 100vh;
   background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to right,
+          #D1E1CD 0%,
+          #fbfffb calc(50% - 600px),
+          #fbfffb calc(50% - 600px),
+          #fbfffb calc(50% + 600px),
+          #fbfffb calc(50% + 600px),
+          #D1E1CD 100%);
 
   #root {
     min-height: inherit;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 1400px;
   }
 }
 

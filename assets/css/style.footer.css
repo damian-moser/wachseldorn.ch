@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Footer */
 footer {
   width: 100%;
@@ -5,53 +6,68 @@ footer {
   justify-content: center;
   background-color: var(--c-green);
 }
-footer #footerDiv {
+footer #footer {
   width: 80%;
   padding: 24px 0;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-footer #footerDiv #linkToHome {
-  width: fit-content;
+footer #footer #footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
-footer #footerDiv #linkToHome img {
-  width: 64px;
+footer #footer #footer-wrapper #home-link img {
+  width: 48px;
 }
-footer #footerDiv ul {
+footer #footer #footer-wrapper #admin {
+  color: #ffffff;
+}
+footer #footer #footer-wrapper #admin::after {
+  content: "↗";
+}
+footer #footer #footer-wrapper #admin:hover {
+  text-decoration: underline;
+}
+footer #footer ul {
   list-style-type: none;
 }
-footer #footerDiv .menu {
+footer #footer .menu {
   display: flex;
   flex-wrap: wrap;
   gap: 48px;
 }
-footer #footerDiv .menu a {
+footer #footer .menu a {
   color: #ffffff;
 }
-footer #footerDiv .menu > li > a:first-child {
+footer #footer .menu > li > a:first-child {
   font-size: 1.25rem;
 }
-footer #footerDiv .menu .sub-menu {
+footer #footer .menu .sub-menu {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   margin-top: 1rem;
 }
-footer #footerDiv .menu .sub-menu li a:hover {
+footer #footer .menu .sub-menu li a:hover {
   text-decoration: underline;
 }
-footer #footerDiv hr {
+footer #footer hr {
   border-color: var(--c-white);
 }
-footer #footerDiv #footerRights {
+footer #footer #footer-cred {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
-footer #footerDiv #footerRights a, footer #footerDiv #footerRights p {
+footer #footer #footer-cred a, footer #footer #footer-cred p {
   color: #ffffff;
 }
-footer #footerDiv #footerRights a:hover {
+footer #footer #footer-cred a:hover {
   text-decoration: underline;
 }
 

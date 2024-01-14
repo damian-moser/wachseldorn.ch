@@ -32,7 +32,7 @@ header{
           gap: 1rem;
 
           img{
-            width: 60px;
+            width: 48px;
           }
 
           h4{
@@ -107,49 +107,59 @@ header{
     }
   }
 
-  #dropdown{
-    z-index: 9999;
-    position: absolute;
-    width: 100%;
+  #dropdown-wrapper {
+    display: flex;
     justify-content: center;
-    background-color: var(--c-yellow);
-    user-select: none;
-    box-shadow: var(--box-shadow);
 
-    #dropdown-container{
-      width: 80%;
-      padding: 20px 0;
-      display: flex;
-      justify-content: space-between;
+    #dropdown{
+      z-index: 9999;
+      position: absolute;
+      width: 100%;
+      justify-content: center;
+      background-color: var(--c-yellow);
+      user-select: none;
+      -webkit-box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+      box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+      max-width: 1120px;
+      border-radius: 8px;
 
-      #dropdown-content{
-        width: 100%;
+      #dropdown-container{
+        width: 80%;
+        padding: 20px 0;
         display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
+        justify-content: space-between;
 
-        li{
-          width: 30%;
+        #dropdown-content{
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 12px;
 
-          a{
-            font-size: 1rem;
-            color: var(--f-c-black);
+          li{
+            width: 30%;
+            display: flex;
+            align-items: center;
 
-            &:hover{
-              text-decoration: underline;
+            a{
+              font-size: 1rem;
+              color: var(--f-c-black);
+
+              &:hover{
+                text-decoration: underline;
+              }
             }
           }
         }
-      }
 
-      #closeMenu{
-        align-self: flex-start;
-        width: 28px;
-        height: 28px;
-        cursor: pointer;
+        #closeMenu{
+          align-self: flex-start;
+          width: 28px;
+          height: 28px;
+          cursor: pointer;
 
-        &:hover{
-          opacity: 0.75;
+          &:hover{
+            opacity: 0.75;
+          }
         }
       }
     }

@@ -1,5 +1,5 @@
 /* HOMEPAGE */
-#container {
+#bg-image {
   width: 100%;
   background-image: url("../img/landschaft.jpg");
   background-repeat: no-repeat;
@@ -10,21 +10,21 @@
   justify-content: center;
   align-items: center;
 }
-#container #homeContainer {
+#bg-image #welcome {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 72px;
   margin: 40px 0;
 }
-#container #homeContainer #title {
+#bg-image #welcome #title {
   text-align: center;
   font-size: 4rem;
   color: var(--c-white);
   font-family: var(--f-black);
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
-#container #homeContainer #homeBtn {
+#bg-image #welcome #news-btn {
   padding: 1rem 2rem;
   font-family: var(--f-medium);
   font-size: 1.25rem;

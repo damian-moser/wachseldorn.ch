@@ -31,7 +31,7 @@ header #header-content #wrapper #wappen #home {
   gap: 1rem;
 }
 header #header-content #wrapper #wappen #home img {
-  width: 60px;
+  width: 48px;
 }
 header #header-content #wrapper #wappen #home h4 {
   color: var(--f-c-black);
@@ -89,44 +89,53 @@ header #header-content #wrapper nav > ul .menu-item-has-children.active a::after
   display: inline-block;
   vertical-align: middle;
 }
-header #dropdown {
+header #dropdown-wrapper {
+  display: flex;
+  justify-content: center;
+}
+header #dropdown-wrapper #dropdown {
   z-index: 9999;
   position: absolute;
   width: 100%;
   justify-content: center;
   background-color: var(--c-yellow);
   user-select: none;
-  box-shadow: var(--box-shadow);
+  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 1120px;
+  border-radius: 8px;
 }
-header #dropdown #dropdown-container {
+header #dropdown-wrapper #dropdown #dropdown-container {
   width: 80%;
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
 }
-header #dropdown #dropdown-container #dropdown-content {
+header #dropdown-wrapper #dropdown #dropdown-container #dropdown-content {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
 }
-header #dropdown #dropdown-container #dropdown-content li {
+header #dropdown-wrapper #dropdown #dropdown-container #dropdown-content li {
   width: 30%;
+  display: flex;
+  align-items: center;
 }
-header #dropdown #dropdown-container #dropdown-content li a {
+header #dropdown-wrapper #dropdown #dropdown-container #dropdown-content li a {
   font-size: 1rem;
   color: var(--f-c-black);
 }
-header #dropdown #dropdown-container #dropdown-content li a:hover {
+header #dropdown-wrapper #dropdown #dropdown-container #dropdown-content li a:hover {
   text-decoration: underline;
 }
-header #dropdown #dropdown-container #closeMenu {
+header #dropdown-wrapper #dropdown #dropdown-container #closeMenu {
   align-self: flex-start;
   width: 28px;
   height: 28px;
   cursor: pointer;
 }
-header #dropdown #dropdown-container #closeMenu:hover {
+header #dropdown-wrapper #dropdown #dropdown-container #closeMenu:hover {
   opacity: 0.75;
 }
 
