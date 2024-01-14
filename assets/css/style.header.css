@@ -82,12 +82,10 @@ header #header-content #wrapper nav > ul {
 header #header-content #wrapper nav > ul .menu-item-has-children a::after {
   content: url("../img/expand_more.svg");
   display: inline-block;
-  vertical-align: middle;
 }
 header #header-content #wrapper nav > ul .menu-item-has-children.active a::after {
   content: url("../img/expand_less.svg");
   display: inline-block;
-  vertical-align: middle;
 }
 header #dropdown-wrapper {
   display: flex;
@@ -165,14 +163,12 @@ header #dropdown-wrapper #dropdown #dropdown-container #closeMenu:hover {
 #menu #menu-content .menu-item-has-children > a:first-child::after {
   content: url("../img/expand_more.svg");
   display: inline-block;
-  vertical-align: middle;
   position: absolute;
   right: 0;
 }
 #menu #menu-content .menu-item-has-children.active > a:first-child::after {
   content: url("../img/expand_less.svg");
   display: inline-block;
-  vertical-align: middle;
   position: absolute;
   right: 0;
 }

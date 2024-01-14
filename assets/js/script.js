@@ -1,46 +1,42 @@
-function getAll(selector) { return document.querySelectorAll(selector); }
+// DESKTOP ITEMS
+const DESKTOP_NAV_ITEMS = document.querySelectorAll('nav .menu-item-has-children');
+const DROPDOWN = document.querySelector("#dropdown");
+const DROPDOWN_CONTENT = document.querySelector("#dropdown-content");
+const CLOSE_BUTTON = document.querySelector('#closeMenu');
 
-function get(selector) { return document.querySelector(selector); }
+// MOBILE ITEMS
+const MOBILE_NAV_ITEMS = document.querySelectorAll('#menu .menu-item-has-children');
+const MOBILE_MENU = document.querySelector("#menu");
 
-// Desktop items
-const DESKTOP_NAV_ITEMS = getAll('nav .menu-item-has-children');
-const DROPDOWN = get("#dropdown");
-const DROPDOWN_CONTENT = get("#dropdown-content");
-const CLOSE_BUTTON = get('#closeMenu');
+// DESKTOP FUNCTIONS
+DESKTOP_NAV_ITEMS.forEach(item => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
+        const link = item.querySelector('a');
+        if (checkBorderBottom(link, 'desktop')) {
+            toggleArrow(item);
+            closeDropdown();
+        } else {
+            removeAllBorderBottom(DESKTOP_NAV_ITEMS, 'desktop');
+            addBorderBottom(link, 'desktop');
 
-// Mobile items
-const MOBILE_NAV_ITEMS = getAll('#menu .menu-item-has-children');
-const MOBILE_MENU = get("#menu");
+            DROPDOWN.style.display = "flex";
+            DROPDOWN_CONTENT.innerHTML = item.querySelector('nav .sub-menu').innerHTML;
 
-function toggleVisibility(element) { return element.style.visibility === "visible" ? 'hidden' : 'visible'; }
-
-function toggleFlex(element) { return element.style.display === "flex" ? 'none' : 'flex'; }
-
-document.addEventListener('click', event => {
-    const dropdown = document.getElementById('dropdown');
-    const buttons = document.querySelectorAll('header nav ul.menu li.menu-item-has-children');
-
-    (!Array.from(buttons).some(button => button.contains(event.target)) && !dropdown.contains(event.target)) ? closeDropdown() : null;
+            turnAllArrowsDown(DESKTOP_NAV_ITEMS);
+            toggleArrow(item);
+        }
+    });
 });
 
-function changeMobileBars(mobileBars) {
-    closeAllMobileMenus();
-    mobileBars.classList.toggle("changeMobile");
-    MOBILE_MENU.style.visibility = toggleVisibility(MOBILE_MENU);
-    MOBILE_MENU.style.display = toggleFlex(MOBILE_MENU);
-}
+document.addEventListener('click', event => {
+    (!Array.from(DESKTOP_NAV_ITEMS).some(button => button.contains(event.target)) && !DROPDOWN.contains(event.target)) ? closeDropdown() : null;
+});
 
-function closeAllMobileMenus(){
-    MOBILE_NAV_ITEMS.forEach(item => {
-        removeBorderBottom(item.querySelector('a'), 'mobile');
-        item.querySelector('ul.sub-menu').style.display = 'none';
-    });
-}
-
-function turnAllArrowsDown(items){
-    items.forEach(item => {
-        item.classList.remove('active')
-    });
+function closeDropdown(){
+    DROPDOWN.style.display = "none";
+    turnAllArrowsDown(DESKTOP_NAV_ITEMS);
+    removeAllBorderBottom(DESKTOP_NAV_ITEMS, 'desktop');
 }
 
 function toggleArrow(item){ item.classList.toggle('active'); }
@@ -51,56 +47,54 @@ function removeAllBorderBottom(li, where){
     });
 }
 
-function checkBorderBottom(link, where){ return link.classList.contains('border-bottom-' + where); }
+CLOSE_BUTTON.addEventListener('click', () => closeDropdown());
 
-function closeDropdown(){
-    DROPDOWN.style.display = "none";
-    turnAllArrowsDown(DESKTOP_NAV_ITEMS);
-    removeAllBorderBottom(DESKTOP_NAV_ITEMS, 'desktop');
-}
-
-function addBorderBottom(item, where){ item.classList.add('border-bottom-' + where); }
-
-function removeBorderBottom(item, where){ item.classList.remove('border-bottom-' + where); }
-
-DESKTOP_NAV_ITEMS.forEach(item => {
-    item.addEventListener('click', (e) => {
-        e.preventDefault();
-        const link = item.querySelector('a');
-
-        if (checkBorderBottom(link, 'desktop')) {
-            removeBorderBottom(link, 'desktop');
-            closeDropdown();
-        } else {
-            removeAllBorderBottom(DESKTOP_NAV_ITEMS, 'desktop');
-            addBorderBottom(link, 'desktop');
-
-            // show dropdown
-            DROPDOWN.style.display = "flex";
-            DROPDOWN_CONTENT.innerHTML = item.querySelector('nav .sub-menu').innerHTML;
-
-            turnAllArrowsDown(DESKTOP_NAV_ITEMS);
-        }
-
-        toggleArrow(item);
-    });
-});
-
+// MOBILE FUNCTIONS
 MOBILE_NAV_ITEMS.forEach(item => {
     item.querySelector('a').addEventListener('click', (e) => {
         e.preventDefault();
         const link = item.querySelector('a');
-        item.querySelector('.sub-menu').style.display = toggleFlex(item.querySelector('.sub-menu'));
+        const subMenu = item.querySelector('.sub-menu');
+        subMenu.style.display = subMenu.style.display === 'flex' ? 'none' : 'flex';
 
         if(checkBorderBottom(link, 'mobile')){
-            removeBorderBottom(link, 'mobile');
+            removeBorderBottom(link);
         } else {
             addBorderBottom(link, 'mobile');
             turnAllArrowsDown(MOBILE_NAV_ITEMS);
         }
-
         toggleArrow(item);
     });
 });
 
-CLOSE_BUTTON.addEventListener('click', () => closeDropdown());
+function changeMobileBars(mobileBars) {
+    MOBILE_NAV_ITEMS.forEach(item => {
+        removeBorderBottom(item.querySelector('a'));
+        item.querySelector('ul.sub-menu').style.display = 'none';
+    });
+
+    mobileBars.classList.toggle("changeMobile");
+    MOBILE_MENU.style.visibility = MOBILE_MENU.style.visibility === "visible" ? "hidden" : "visible";
+    MOBILE_MENU.style.display = MOBILE_MENU.style.display === "flex" ? "none" : "flex";
+}
+
+function removeBorderBottom(item){
+    item.classList.remove('border-bottom-mobile');
+}
+
+// BOTH FUNCTION
+function turnAllArrowsDown(items){
+    items.forEach(item => {
+        if (item.classList.contains("active")) {
+            item.classList.remove("active");
+        }
+    });
+}
+
+function addBorderBottom(item, where){
+    item.classList.add('border-bottom-' + where);
+}
+
+function checkBorderBottom(link, where){
+    return link.classList.contains('border-bottom-' + where);
+}

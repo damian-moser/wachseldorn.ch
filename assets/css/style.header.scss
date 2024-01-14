@@ -94,13 +94,11 @@ header{
           .menu-item-has-children a::after{
             content: url('../img/expand_more.svg');
             display: inline-block;
-            vertical-align: middle;
           }
 
           .menu-item-has-children.active a::after{
             content: url('../img/expand_less.svg');
             display: inline-block;
-            vertical-align: middle;
           }
         }
       }
@@ -194,7 +192,6 @@ header{
     .menu-item-has-children > a:first-child::after{
       content: url('../img/expand_more.svg');
       display: inline-block;
-      vertical-align: middle;
       position: absolute;
       right: 0;
     }
@@ -202,7 +199,6 @@ header{
     .menu-item-has-children.active > a:first-child::after{
       content: url('../img/expand_less.svg');
       display: inline-block;
-      vertical-align: middle;
       position: absolute;
       right: 0;
     }
