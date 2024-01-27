@@ -98,3 +98,13 @@ function addBorderBottom(item, where){
 function checkBorderBottom(link, where){
     return link.classList.contains('border-bottom-' + where);
 }
+
+// scroll to top button
+window.onscroll = () => {
+    document.getElementById("backToTopBtn").style.display = document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 ? "flex" : "none";
+};
+
+function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}

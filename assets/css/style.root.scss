@@ -180,6 +180,26 @@ body {
   border-bottom-color: var(--f-c-black) !important;
 }
 
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--c-yellow);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+
+  &:hover {
+    background-color: var(--c-h-yellow);
+  }
+}
+
 @media only screen and (max-width: 1425px) {
   section {
     padding: 0 var(--spacing-x);
