@@ -42,7 +42,6 @@
 :root {
   font-size: 16px;
   font-family: var(--f-regular);
-  --transition-back-color: background-color 0.2s ease;
   --f-light: "Inter Light";
   --f-regular: "Inter Regular";
   --f-medium: "Inter Medium";
@@ -56,6 +55,9 @@
   --c-h-yellow: #c9a000;
   --c-h-green: #416e27;
   --bg-color: #fbfffb;
+  --spacing-x: 24px;
+  --max-width: 1400px;
+  --transition-back-color: background-color 0.2s ease;
   --box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -115,7 +117,7 @@ a {
 }
 
 .pagination-control {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 1rem;
@@ -137,8 +139,9 @@ body #root {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 1400px;
+  align-items: center;
   width: 100%;
+  max-width: 100%;
 }
 
 #notFound {
@@ -162,6 +165,21 @@ body #root {
   border-bottom-color: var(--f-c-black) !important;
 }
 
+@media only screen and (max-width: 1425px) {
+  section {
+    padding: 0 var(--spacing-x);
+  }
+  .pagination-control {
+    padding: 0 var(--spacing-x);
+  }
+  .page-banner {
+    display: flex;
+    justify-content: center;
+  }
+  .page-banner img {
+    margin: 0 var(--spacing-x);
+  }
+}
 @media only screen and (max-width: 900px) {
   nav {
     display: none;

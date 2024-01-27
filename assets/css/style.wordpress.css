@@ -1,12 +1,14 @@
 @charset "UTF-8";
 main {
+  width: 100%;
+  max-width: var(--max-width);
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 1rem 0;
 }
 main .page-banner {
-  width: 80%;
+  width: 100%;
   margin-bottom: 1rem;
 }
 main .page-banner img {
@@ -17,7 +19,7 @@ main .page-banner img {
   border-radius: 8px;
 }
 main section {
-  width: 80%;
+  width: 100%;
   margin: 2.5rem 0;
 }
 main section ol, main section ul {
