@@ -185,6 +185,9 @@ body #root {
 }
 
 @media only screen and (max-width: 1425px) {
+  #header-content #wrapper {
+    margin: 0 var(--spacing-x);
+  }
   section {
     padding: 0 var(--spacing-x);
   }

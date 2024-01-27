@@ -21,7 +21,6 @@ header #header-content #wrapper {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin: 0 var(--spacing-x);
 }
 header #header-content #wrapper #wappen {
   display: flex;
