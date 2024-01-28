@@ -23,7 +23,7 @@ main section {
 }
 main section form input, main section form textarea, main section form select {
   padding: 0.5rem;
-  border: 2px #ddd solid;
+  border: 3px #ddd solid;
   outline: none;
   border-radius: 4px;
   transition: border-color 0.25s ease;
