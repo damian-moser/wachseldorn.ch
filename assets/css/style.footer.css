@@ -26,6 +26,22 @@ footer #footer #footer-wrapper {
 footer #footer #footer-wrapper #home-link img {
   width: 48px;
 }
+footer #footer #footer-infos {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  color: #ffffff;
+}
+footer #footer #footer-infos h2 {
+  margin-bottom: 0.75rem;
+}
+footer #footer #footer-infos td {
+  padding: 0 2rem 0.5rem 0;
+}
+footer #footer #footer-infos p {
+  margin: 0.75rem 0;
+}
 footer #footer ul {
   list-style-type: none;
 }

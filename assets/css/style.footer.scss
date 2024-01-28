@@ -28,6 +28,26 @@ footer{
       }
     }
 
+    #footer-infos {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      color: #ffffff;
+
+      h2 {
+        margin-bottom: .75rem;
+      }
+
+      td {
+        padding: 0 2rem .5rem 0;
+      }
+
+      p {
+        margin: .75rem 0;
+      }
+    }
+
     ul{
       list-style-type: none;
     }

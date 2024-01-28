@@ -6,6 +6,28 @@
                 </a>
                 <a class="link-white" href="<?= home_url() . "/wp-admin/"; ?>" target="_blank" rel="noopener">Login➚</a>
             </div>
+            <div id="footer-infos">
+                <div>
+                    <h2>Öffnungszeiten</h2>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Dienstag</td>
+                            <td><strong>07.30 Uhr bis 11.30 Uhr</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Donnerstag</td>
+                            <td><strong>07.00 Uhr bis 11.30 Uhr</strong></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p>Telefonisch sind wir täglich unter der Telefonnummer <a class="link" href="tel:0334531054">033 453 10 54</a> erreichbar.</p>
+                </div>
+                <div>
+                    <h2>Adresse</h2>
+                    <strong>Süderen 63 a, 3618 Süderen</strong>
+                </div>
+            </div>
             <?php
                 wp_nav_menu(array(
                     'theme_location' => 'footer',
