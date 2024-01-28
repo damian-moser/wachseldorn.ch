@@ -21,6 +21,30 @@ main section {
   width: 100%;
   margin: 2.5rem 0;
 }
+main section form input, main section form textarea, main section form select {
+  padding: 0.5rem;
+  border: 2px #ddd solid;
+  outline: none;
+  border-radius: 4px;
+  transition: border-color 0.25s ease;
+  font-size: 1rem;
+}
+main section form input:focus, main section form input:hover, main section form textarea:focus, main section form textarea:hover, main section form select:focus, main section form select:hover {
+  border-color: var(--c-yellow);
+}
+main section form textarea {
+  resize: vertical;
+}
+main section form input[type=submit] {
+  background-color: var(--c-yellow);
+  transition: background-color 0.2s ease;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+main section form input[type=submit]:hover {
+  background-color: var(--c-h-yellow);
+}
 main section ol, main section ul {
   margin-left: 2rem;
 }
@@ -43,12 +67,12 @@ main section a:after {
 main section a:hover:after {
   transform: scaleX(1);
 }
-main section .ngg-galleryoverview a, main section #news-container a {
+main section .ngg-galleryoverview a, main section #news-container a, main section #filter-form a {
   display: unset;
   width: unset;
   color: unset;
 }
-main section .ngg-galleryoverview a:after, main section #news-container a:after {
+main section .ngg-galleryoverview a:after, main section #news-container a:after, main section #filter-form a:after {
   display: unset;
   content: "";
   border-bottom: unset;
@@ -179,6 +203,17 @@ main section .wp-block-file .wp-element-button:hover {
 }
 .link-white:hover:after {
   transform: scaleX(1);
+}
+
+.no-link {
+  display: unset;
+  width: unset;
+  color: unset;
+}
+.no-link:after {
+  display: unset;
+  content: "";
+  border-bottom: unset;
 }
 
 /*# sourceMappingURL=style.wordpress.css.map */
