@@ -43,6 +43,16 @@ main section a:after {
 main section a:hover:after {
   transform: scaleX(1);
 }
+main section .ngg-galleryoverview a, main section #news-container a {
+  display: unset;
+  width: unset;
+  color: unset;
+}
+main section .ngg-galleryoverview a:after, main section #news-container a:after {
+  display: unset;
+  content: "";
+  border-bottom: unset;
+}
 main section #news-container a:hover, main section #filter-form a:hover {
   text-decoration: none;
 }

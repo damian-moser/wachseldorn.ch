@@ -50,6 +50,19 @@ main {
       }
     }
 
+    // Entferne Animation bei Elementen die es nicht haben sollen
+    .ngg-galleryoverview a, #news-container a {
+      display: unset;
+      width: unset;
+      color: unset;
+
+      &:after {
+        display: unset;
+        content: '';
+        border-bottom: unset;
+      }
+    }
+
     #news-container a, #filter-form a{
       &:hover{
         text-decoration: none;
