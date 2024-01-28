@@ -1,4 +1,3 @@
-@charset "UTF-8";
 main {
   width: 100%;
   max-width: var(--max-width);
@@ -30,13 +29,19 @@ main section p {
   margin: 0.75rem 0;
 }
 main section a {
-  color: var(--f-c-black);
+  color: var(--f-c-blue);
+  display: inline-block;
+  width: fit-content;
 }
-main section a:hover {
-  text-decoration: underline;
+main section a:after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px var(--f-c-blue);
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
 }
-main section a::after {
-  content: "➚";
+main section a:hover:after {
+  transform: scaleX(1);
 }
 main section #news-container a:hover, main section #filter-form a:hover {
   text-decoration: none;
@@ -132,6 +137,38 @@ main section .wp-block-file .wp-element-button:hover {
 .btn:hover {
   background-color: var(--c-h-yellow);
   text-decoration: none;
+}
+
+.link {
+  color: var(--f-c-blue);
+  display: inline-block;
+  width: fit-content;
+}
+.link:after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px var(--f-c-blue);
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+}
+.link:hover:after {
+  transform: scaleX(1);
+}
+
+.link-white {
+  color: #ffffff;
+  display: inline-block;
+  width: fit-content;
+}
+.link-white:after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #ffffff;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+}
+.link-white:hover:after {
+  transform: scaleX(1);
 }
 
 /*# sourceMappingURL=style.wordpress.css.map */

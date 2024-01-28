@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Footer */
 footer {
   width: 100%;
@@ -27,15 +26,6 @@ footer #footer #footer-wrapper {
 footer #footer #footer-wrapper #home-link img {
   width: 48px;
 }
-footer #footer #footer-wrapper #admin {
-  color: #ffffff;
-}
-footer #footer #footer-wrapper #admin::after {
-  content: "↗";
-}
-footer #footer #footer-wrapper #admin:hover {
-  text-decoration: underline;
-}
 footer #footer ul {
   list-style-type: none;
 }
@@ -46,6 +36,18 @@ footer #footer .menu {
 }
 footer #footer .menu a {
   color: #ffffff;
+  display: inline-block;
+  width: fit-content;
+}
+footer #footer .menu a:after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #ffffff;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+}
+footer #footer .menu a:hover:after {
+  transform: scaleX(1);
 }
 footer #footer .menu > li > a:first-child {
   font-size: 1.25rem;
@@ -56,9 +58,6 @@ footer #footer .menu .sub-menu {
   gap: 0.5rem;
   margin-top: 1rem;
 }
-footer #footer .menu .sub-menu li a:hover {
-  text-decoration: underline;
-}
 footer #footer hr {
   border-color: var(--c-white);
 }
@@ -67,12 +66,6 @@ footer #footer #footer-cred {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
-}
-footer #footer #footer-cred a, footer #footer #footer-cred p {
-  color: #ffffff;
-}
-footer #footer #footer-cred a:hover {
-  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.footer.css.map */

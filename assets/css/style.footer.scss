@@ -26,17 +26,6 @@ footer{
       #home-link img {
         width: 48px;
       }
-
-      #admin {
-        color: #ffffff;
-
-        &::after {
-          content: "↗";
-        }
-        &:hover {
-          text-decoration: underline;
-        }
-      }
     }
 
     ul{
@@ -50,6 +39,20 @@ footer{
 
       a{
         color: #ffffff;
+        display: inline-block;
+        width: fit-content;
+
+        &:after {
+          display      : block;
+          content      : '';
+          border-bottom: solid 2px #ffffff;
+          transform    : scaleX(0);
+          transition   : transform 0.25s ease-in-out;
+        }
+
+        &:hover:after {
+          transform: scaleX(1);
+        }
       }
 
       & > li > a:first-child{
@@ -61,10 +64,6 @@ footer{
         flex-direction: column;
         gap: 0.5rem;
         margin-top: 1rem;
-
-        li a:hover{
-          text-decoration: underline;
-        }
       }
     }
 
@@ -77,14 +76,6 @@ footer{
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 1rem;
-
-      a, p{
-        color: #ffffff;
-      }
-
-      a:hover{
-        text-decoration: underline;
-      }
     }
   }
 }

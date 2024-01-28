@@ -33,14 +33,20 @@ main {
     }
 
     a{
-      color: var(--f-c-black);
+      color: var(--f-c-blue);
+      display: inline-block;
+      width: fit-content;
 
-      &:hover{
-        text-decoration: underline;
+      &:after {
+        display      : block;
+        content      : '';
+        border-bottom: solid 2px var(--f-c-blue);
+        transform    : scaleX(0);
+        transition   : transform 0.25s ease-in-out;
       }
 
-      &::after{
-        content: '➚';
+      &:hover:after {
+        transform: scaleX(1);
       }
     }
 
@@ -163,5 +169,41 @@ main {
   &:hover{
     background-color: var(--c-h-yellow);
     text-decoration: none;
+  }
+}
+
+.link {
+  color: var(--f-c-blue);
+  display: inline-block;
+  width: fit-content;
+
+  &:after {
+    display      : block;
+    content      : '';
+    border-bottom: solid 2px var(--f-c-blue);
+    transform    : scaleX(0);
+    transition   : transform 0.25s ease-in-out;
+  }
+
+  &:hover:after {
+    transform: scaleX(1);
+  }
+}
+
+.link-white {
+  color: #ffffff;
+  display: inline-block;
+  width: fit-content;
+
+  &:after {
+    display      : block;
+    content      : '';
+    border-bottom: solid 2px #ffffff;
+    transform    : scaleX(0);
+    transition   : transform 0.25s ease-in-out;
+  }
+
+  &:hover:after {
+    transform: scaleX(1);
   }
 }
