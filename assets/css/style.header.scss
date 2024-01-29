@@ -107,60 +107,62 @@ header{
     }
   }
 
-  #dropdown-wrapper {
-    display: flex;
+  #dropdown{
+    z-index: 9999;
+    position: absolute;
+    width: 100%;
     justify-content: center;
+    background-color: var(--c-yellow);
+    user-select: none;
+    box-shadow: 0 .5rem .5rem 0 rgba(0, 0, 0, 0.25);
+    max-width: 1400px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.25s ease;
 
-    #dropdown{
-      z-index: 9999;
-      position: absolute;
-      width: 100%;
-      justify-content: center;
-      background-color: var(--c-yellow);
-      user-select: none;
-      -webkit-box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
-      box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
-      max-width: 1120px;
-      border-radius: 8px;
-      top: 12rem;
+    &.open {
+      visibility: visible;
+      opacity: 1;
+    }
 
-      #dropdown-container{
-        width: 80%;
-        padding: 20px 0;
+    #dropdown-container{
+      width: 80%;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+
+      #dropdown-content{
+        width: 100%;
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 12px;
 
-        #dropdown-content{
-          width: 100%;
+        li{
+          width: 30%;
           display: flex;
-          flex-wrap: wrap;
-          gap: 12px;
+          align-items: center;
 
-          li{
-            width: 30%;
-            display: flex;
-            align-items: center;
+          a{
+            font-size: 1rem;
+            color: var(--f-c-black);
 
-            a{
-              font-size: 1rem;
-              color: var(--f-c-black);
-
-              &:hover{
-                text-decoration: underline;
-              }
+            &:hover{
+              text-decoration: underline;
             }
           }
         }
+      }
 
-        #closeMenu{
-          align-self: flex-start;
-          width: 28px;
-          height: 28px;
-          cursor: pointer;
+      #closeMenu{
+        align-self: flex-start;
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
 
-          &:hover{
-            opacity: 0.75;
-          }
+        &:hover{
+          opacity: 0.75;
         }
       }
     }

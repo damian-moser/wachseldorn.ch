@@ -21,8 +21,8 @@ DESKTOP_NAV_ITEMS.forEach(item => {
             addBorderBottom(link, 'desktop');
 
             DROPDOWN.style.display = "flex";
+            setTimeout(() => DROPDOWN.classList.add("open"), 50);
             DROPDOWN_CONTENT.innerHTML = item.querySelector('nav .sub-menu').innerHTML;
-
             turnAllArrowsDown(DESKTOP_NAV_ITEMS);
             toggleArrow(item);
         }
@@ -34,7 +34,8 @@ document.addEventListener('click', event => {
 });
 
 function closeDropdown(){
-    DROPDOWN.style.display = "none";
+    DROPDOWN.classList.remove("open");
+    setTimeout(() => DROPDOWN.style.display = "none", 250);
     turnAllArrowsDown(DESKTOP_NAV_ITEMS);
     removeAllBorderBottom(DESKTOP_NAV_ITEMS, 'desktop');
 }

@@ -33,12 +33,10 @@
                 </nav>
             </div>
         </div>
-        <div id="dropdown-wrapper">
-            <div id="dropdown" style="display: none;">
-                <div id="dropdown-container">
-                    <div id="dropdown-content"></div>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/xmark.svg" id="closeMenu" alt="Menu schliessen" title="schliessen">
-                </div>
+        <div id="dropdown" style="display: none;">
+            <div id="dropdown-container">
+                <div id="dropdown-content"></div>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/xmark.svg" id="closeMenu" alt="Menu schliessen" title="schliessen">
             </div>
         </div>
         <!-- MOBILE MENU -->
