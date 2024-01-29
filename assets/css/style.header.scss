@@ -173,11 +173,17 @@ header{
   position: absolute;
   background-color: var(--c-yellow);
   width: 100%;
-  display: flex;
   justify-content: center;
   padding: 1rem 0;
   box-shadow: var(--box-shadow);
   border-radius: 8px;
+  opacity: 0;
+  transition: all 0.25s ease;
+
+  &.open {
+    visibility: visible;
+    opacity: 1;
+  }
 
   #menu-content{
     width: 80%;

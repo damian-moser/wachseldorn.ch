@@ -40,7 +40,7 @@
             </div>
         </div>
         <!-- MOBILE MENU -->
-        <div id="menu" style="visibility: hidden; display: none">
+        <div id="menu" style="visibility: hidden; display: none;">
             <div id="menu-content">
                 <?php
                 wp_nav_menu(array(

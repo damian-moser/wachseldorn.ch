@@ -75,8 +75,18 @@ function changeMobileBars(mobileBars) {
     });
 
     mobileBars.classList.toggle("changeMobile");
-    MOBILE_MENU.style.visibility = MOBILE_MENU.style.visibility === "visible" ? "hidden" : "visible";
-    MOBILE_MENU.style.display = MOBILE_MENU.style.display === "flex" ? "none" : "flex";
+    if (MOBILE_MENU.style.display === "flex") {
+        MOBILE_MENU.classList.toggle("open")
+
+        setTimeout(() => {
+            MOBILE_MENU.style.visibility = "hidden";
+            MOBILE_MENU.style.display = "none";
+        }, 250);
+    } else {
+        MOBILE_MENU.style.visibility = "visible";
+        MOBILE_MENU.style.display = "flex";
+        setTimeout(() => MOBILE_MENU.classList.toggle("open"), 50);
+    }
 }
 
 function removeBorderBottom(item){
