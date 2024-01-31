@@ -37,7 +37,7 @@ header #header-content #wrapper #wappen #home img {
 }
 header #header-content #wrapper #wappen #home h4 {
   color: var(--f-c-black);
-  font-family: var(--f-light);
+  font-family: var(--f-bold);
 }
 header #header-content #wrapper #wappen #mobile {
   flex-flow: column wrap;

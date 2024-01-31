@@ -14,7 +14,7 @@
                 <div id="wappen">
                     <a id="home" href="<?php echo home_url(); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/wachseldorn.svg" alt="Wappen Wachseldorn">
-                        <h4>Wachseldorn</h4>
+                        <h4>Gemeinde Wachseldorn</h4>
                     </a>
                     <div id="mobile" onclick="changeMobileBars(this)">
                         <div id="bar-top"></div>
