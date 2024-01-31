@@ -67,12 +67,12 @@ main section a:after {
 main section a:hover:after {
   transform: scaleX(1);
 }
-main section .ngg-galleryoverview a, main section #news-container a, main section #filter-form a {
+main section .ngg-galleryoverview a, main section #news-container a, main section #filter-form a, main section .not-found a {
   display: unset;
   width: unset;
   color: unset;
 }
-main section .ngg-galleryoverview a:after, main section #news-container a:after, main section #filter-form a:after {
+main section .ngg-galleryoverview a:after, main section #news-container a:after, main section #filter-form a:after, main section .not-found a:after {
   display: unset;
   content: "";
   border-bottom: unset;

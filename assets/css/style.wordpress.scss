@@ -82,7 +82,7 @@ main {
     }
 
     // Entferne Animation bei Elementen die es nicht haben sollen
-    .ngg-galleryoverview a, #news-container a, #filter-form a {
+    .ngg-galleryoverview a, #news-container a, #filter-form a, .not-found a {
       display: unset;
       width: unset;
       color: unset;
