@@ -11,7 +11,8 @@ Template Name: Archivseite
     <section>
         <h1>Neuigkeiten</h1>
         <div id="filter-form">
-            <form method="get">
+            <button type="button" class="input-btn" onclick="showFilter(this)">Filter anzeigen</button>
+            <form method="get" style="display: none;">
                 <input
                     class="input"
                     type="text"
@@ -41,10 +42,10 @@ Template Name: Archivseite
                 <?php endif; ?>
 
                 <input class="input-btn" type="submit" value="Filtern">
+                <a href="<?php echo esc_url( remove_query_arg( array( 'filter_title', 'category' ) ) ); ?>">
+                    <button class="input-btn green">Zurücksetzen</button>
+                </a>
             </form>
-            <a href="<?php echo esc_url( remove_query_arg( array( 'filter_title', 'category' ) ) ); ?>">
-                <button class="input-btn green">Zurücksetzen</button>
-            </a>
         </div>
 
         <?php

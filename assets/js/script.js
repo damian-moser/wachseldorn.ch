@@ -119,3 +119,8 @@ function scrollToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+function showFilter(btn) {
+    btn.remove();
+    document.querySelector("#filter-form form").style.display = "flex";
+}
