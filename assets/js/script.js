@@ -112,7 +112,7 @@ function checkBorderBottom(link, where){
 
 // scroll to top button
 window.onscroll = () => {
-    document.getElementById("backToTopBtn").style.display = document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 ? "flex" : "none";
+    document.querySelector(".topBtn").style.display = document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 ? "flex" : "none";
 };
 
 function scrollToTop() {

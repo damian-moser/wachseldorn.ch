@@ -1,7 +1,7 @@
 /* HOMEPAGE */
-#bg-image{
+.bg-image{
   width: 100%;
-  background-image: url("../img/landschaft.jpg");
+  background-image: url("../img/bg-image.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -12,14 +12,14 @@
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 
-  #welcome{
+  .welcome{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 72px;
     margin: 40px 0;
 
-    #title{
+    .welcome-title{
       text-align: center;
       font-size: 4rem;
       color: var(--c-white);
@@ -27,7 +27,7 @@
       text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
     }
 
-    #news-btn{
+    .news-btn{
       padding: 1rem 2rem;
       font-family: var(--f-medium);
       font-size: 1.25rem;

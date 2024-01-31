@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
-<div id="bg-image">
-     <div id="welcome">
-          <h1 id="title">Willkommen in Wachseldorn</h1>
-          <a href="/neuigkeiten" id="news-btn" class="btn">News</a>
+<div class="bg-image">
+     <div class="welcome">
+          <h1 class="welcome-title">Willkommen in Wachseldorn</h1>
+          <a href="/neuigkeiten" class="btn news-btn">News</a>
      </div>
 </div>
 <main>

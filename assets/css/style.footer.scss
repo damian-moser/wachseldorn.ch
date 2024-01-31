@@ -1,34 +1,37 @@
 /* Footer */
-footer{
+.footer-waves {
+  width: 100%;
+  height: auto;
+}
+
+footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: var(--c-green);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  background-color: var(--footer-color);
 
-  #footer{
+  .footer-content {
     width: 100%;
     max-width: var(--max-width);
     margin: 0 var(--spacing-x);
-    padding: 24px 0;
+    padding: 0 0 24px 0;
     display: flex;
     flex-direction: column;
     gap: 24px;
 
-    #footer-wrapper {
+    .footer-navigation {
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
       gap: 1rem;
 
-      #home-link img {
+      img {
         width: 48px;
       }
     }
 
-    #footer-infos {
+    .footer-info {
       display: flex;
       justify-content: space-between;
       gap: 1rem;
@@ -36,7 +39,8 @@ footer{
       color: #ffffff;
 
       h2 {
-        margin-bottom: .75rem;
+        margin-bottom: 1rem;
+        font-family: var(--f-bold);
       }
 
       td {
@@ -44,30 +48,30 @@ footer{
       }
 
       p {
-        margin: .75rem 0;
+        margin: 1rem 0 2rem 0;
       }
     }
 
-    ul{
+    ul {
       list-style-type: none;
     }
 
-    .menu{
+    .menu {
       display: flex;
       flex-wrap: wrap;
-      gap: 48px;
+      gap: 3rem;
 
-      a{
+      a {
         color: #ffffff;
         display: inline-block;
         width: fit-content;
 
         &:after {
-          display      : block;
-          content      : '';
+          display: block;
+          content: '';
           border-bottom: solid 2px #ffffff;
-          transform    : scaleX(0);
-          transition   : transform 0.25s ease-in-out;
+          transform: scaleX(0);
+          transition: transform 0.25s ease-in-out;
         }
 
         &:hover:after {
@@ -75,11 +79,12 @@ footer{
         }
       }
 
-      & > li > a:first-child{
-        font-size: 1.25rem;
+      & > li > a:first-child {
+        font-size: 1.1rem;
+        font-family: var(--f-bold);
       }
 
-      .sub-menu{
+      .sub-menu {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
@@ -87,11 +92,11 @@ footer{
       }
     }
 
-    hr{
+    hr {
       border-color: var(--c-white);
     }
 
-    #footer-cred{
+    .footer-cred {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
