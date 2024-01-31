@@ -4,7 +4,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem 0;
+  margin-top: 1rem;
 }
 main .page-banner {
   width: 100%;
@@ -19,7 +19,7 @@ main .page-banner img {
 }
 main section {
   width: 100%;
-  margin: 2.5rem 0;
+  margin-top: 2.5rem;
 }
 main section form input, main section form textarea, main section form select {
   padding: 0.5rem;
