@@ -36,7 +36,7 @@
 
 *::selection {
   background-color: var(--c-yellow);
-  color: var(--c-white);
+  color: var(--f-c-black);
 }
 
 :root {
@@ -56,6 +56,7 @@
   --c-h-yellow: #c9a000;
   --c-h-green: #416e27;
   --bg-color: #fbfffb;
+  --footer-color: #243a1a;
   --spacing-x: 24px;
   --max-width: 1400px;
   --transition-back-color: background-color 0.2s ease;
@@ -145,14 +146,14 @@ body #root {
   max-width: 100%;
 }
 
-#notFound {
+.not-found {
   margin: 5rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
 }
-#notFound h1 {
+.not-found h1 {
   text-align: center;
   font-size: 2rem;
   font-family: var(--f-bold);
@@ -166,7 +167,7 @@ body #root {
   border-bottom-color: var(--f-c-black) !important;
 }
 
-#backToTopBtn {
+.topBtn {
   display: none;
   position: fixed;
   bottom: 35px;
@@ -181,7 +182,7 @@ body #root {
   cursor: pointer;
   transition: background-color 0.25s ease;
 }
-#backToTopBtn:hover {
+.topBtn:hover {
   background-color: var(--c-h-yellow);
 }
 

@@ -2,7 +2,7 @@
 
 <main>
      <section>
-          <div id="notFound">
+          <div class="not-found">
                <h1>404 - Seite nicht gefunden</h1>
                <div>
                     <a class="btn" href="javascript:window.history.back();">zurück</a>

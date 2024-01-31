@@ -1,5 +1,5 @@
 /* Footer */
-#footer-waves {
+.footer-waves {
   width: 100%;
   height: auto;
 }
@@ -8,81 +8,81 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #2F4422;
+  background-color: var(--footer-color);
 }
-footer #footer {
+footer .footer-content {
   width: 100%;
   max-width: var(--max-width);
   margin: 0 var(--spacing-x);
-  padding: 24px 0;
+  padding: 0 0 24px 0;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-footer #footer #footer-wrapper {
+footer .footer-content .footer-navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
 }
-footer #footer #footer-wrapper #home-link img {
+footer .footer-content .footer-navigation img {
   width: 48px;
 }
-footer #footer #footer-infos {
+footer .footer-content .footer-info {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
   flex-wrap: wrap;
   color: #ffffff;
 }
-footer #footer #footer-infos h2 {
+footer .footer-content .footer-info h2 {
   margin-bottom: 1rem;
   font-family: var(--f-bold);
 }
-footer #footer #footer-infos td {
+footer .footer-content .footer-info td {
   padding: 0 2rem 0.5rem 0;
 }
-footer #footer #footer-infos p {
+footer .footer-content .footer-info p {
   margin: 1rem 0 2rem 0;
 }
-footer #footer ul {
+footer .footer-content ul {
   list-style-type: none;
 }
-footer #footer .menu {
+footer .footer-content .menu {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
 }
-footer #footer .menu a {
+footer .footer-content .menu a {
   color: #ffffff;
   display: inline-block;
   width: fit-content;
 }
-footer #footer .menu a:after {
+footer .footer-content .menu a:after {
   display: block;
   content: "";
   border-bottom: solid 2px #ffffff;
   transform: scaleX(0);
   transition: transform 0.25s ease-in-out;
 }
-footer #footer .menu a:hover:after {
+footer .footer-content .menu a:hover:after {
   transform: scaleX(1);
 }
-footer #footer .menu > li > a:first-child {
+footer .footer-content .menu > li > a:first-child {
   font-size: 1.1rem;
   font-family: var(--f-bold);
 }
-footer #footer .menu .sub-menu {
+footer .footer-content .menu .sub-menu {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   margin-top: 1rem;
 }
-footer #footer hr {
+footer .footer-content hr {
   border-color: var(--c-white);
 }
-footer #footer #footer-cred {
+footer .footer-content .footer-cred {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

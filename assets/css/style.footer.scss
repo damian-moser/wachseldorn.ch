@@ -1,5 +1,5 @@
 /* Footer */
-#footer-waves {
+.footer-waves {
   width: 100%;
   height: auto;
 }
@@ -8,30 +8,30 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #2F4422;
+  background-color: var(--footer-color);
 
-  #footer {
+  .footer-content {
     width: 100%;
     max-width: var(--max-width);
     margin: 0 var(--spacing-x);
-    padding: 24px 0;
+    padding: 0 0 24px 0;
     display: flex;
     flex-direction: column;
     gap: 24px;
 
-    #footer-wrapper {
+    .footer-navigation {
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
       gap: 1rem;
 
-      #home-link img {
+      img {
         width: 48px;
       }
     }
 
-    #footer-infos {
+    .footer-info {
       display: flex;
       justify-content: space-between;
       gap: 1rem;
@@ -96,7 +96,7 @@ footer {
       border-color: var(--c-white);
     }
 
-    #footer-cred {
+    .footer-cred {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
