@@ -40,12 +40,11 @@ Template Name: Archivseite
                         ?>
                     </select>
                 <?php endif; ?>
-
                 <input class="input-btn" type="submit" value="Filtern">
-                <a href="<?php echo esc_url( remove_query_arg( array( 'filter_title', 'category' ) ) ); ?>">
-                    <button class="input-btn green">Zurücksetzen</button>
-                </a>
             </form>
+            <a id="reset-filter" href="<?php echo esc_url(remove_query_arg(array('filter_title', 'category'))); ?>" style="display: none;">
+                <button class="input-btn green">Zurücksetzen</button>
+            </a>
         </div>
 
         <?php
