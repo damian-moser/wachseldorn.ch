@@ -94,6 +94,7 @@ function dmo140748_register_styles() {
     wp_enqueue_style('dmo140748-style-front-page', $dir . 'style.front-page.css', array(), $version, 'all');
     wp_enqueue_style('dmo140748-style-single', $dir . 'style.single.css', array(), $version, 'all');
     wp_enqueue_style('dmo140748-style-wordpress', $dir . 'style.wordpress.css', array(), $version, 'all');
+    wp_enqueue_style('dmo140748-style-news', $dir . 'style.news.css', array(), $version, 'all');
 }
 
 add_action('wp_enqueue_scripts', 'dmo140748_register_styles');

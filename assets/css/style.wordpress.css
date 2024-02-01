@@ -108,6 +108,9 @@ main section h6 {
   font-size: 0.7rem;
   margin: 0.2rem 0;
 }
+main section strong {
+  font-family: var(--f-bold);
+}
 main section img {
   border-radius: 8px;
 }
