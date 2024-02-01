@@ -26,6 +26,7 @@
 .news-container article a .post-image {
   overflow: hidden;
   border-radius: 8px;
+  height: 12rem;
 }
 .news-container article a .post-image img {
   width: 100%;
