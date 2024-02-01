@@ -21,7 +21,7 @@
 .bg-image .welcome .welcome-title {
   text-align: center;
   font-size: 4rem;
-  color: var(--c-white);
+  color: #ffffff;
   font-family: var(--f-black);
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }

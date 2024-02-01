@@ -43,6 +43,9 @@
 .singe-post article .entry-content .post-content .wp-block-file a:hover {
   background-color: var(--c-h-green);
 }
+.singe-post article .entry-content .post-content .wp-block-file a::after {
+  border-bottom: unset;
+}
 .singe-post article .entry-content .post-content .wp-block-file .wp-block-file__button {
   background-color: var(--c-yellow);
 }

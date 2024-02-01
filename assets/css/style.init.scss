@@ -39,7 +39,7 @@
 
 *::selection {
   background-color: var(--c-green);
-  color: var(--c-white);
+  color: #ffffff;
 }
 
 :root {
@@ -60,13 +60,10 @@
   --c-yellow: #FFCD00;
   --c-green: #5C9343;
 
-  --c-white: #ffffff;
-  --c-black: #000000;
-
   --c-h-yellow: #c9a000;
   --c-h-green: #416e27;
 
-  --bg-color: #fbfffb;
+  --bg-color: #f5f5f5;
   --footer-color: #243a1a;
 
   /* pixel */

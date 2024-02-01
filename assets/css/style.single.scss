@@ -48,6 +48,10 @@
         &:hover {
           background-color: var(--c-h-green);
         }
+
+        &::after {
+          border-bottom: unset;
+        }
       }
 
       .wp-block-file__button {
