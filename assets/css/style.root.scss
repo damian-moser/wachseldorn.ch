@@ -185,8 +185,8 @@ body {
 .topBtn {
   display: none;
   position: fixed;
-  bottom: 35px;
-  right: 35px;
+  bottom: 8rem;
+  right: 2.5rem;
   padding: 8px;
   justify-content: center;
   align-items: center;
@@ -225,21 +225,14 @@ body {
   nav {
     display: none;
   }
-  #loginDesktop{
+  #dropdown {
     display: none !important;
   }
-  #dropdown{
-    display: none !important;
-  }
-  #footerLinksDiv{
-    gap: 24px;
-  }
-  .news{
+  .news {
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-  }
-  #title{
+  } .welcome-title {
     font-size: 3rem !important;
   }
 }
