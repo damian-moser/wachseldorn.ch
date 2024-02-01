@@ -86,22 +86,21 @@ add_action('after_setup_theme', 'dmo140748_theme_support');
 
 function dmo140748_register_styles() {
     $version = wp_get_theme()->get('Version');
-    $dir = get_template_directory_uri() . '/assets/css/';
+    $dir = get_template_directory_uri() . '/assets/css/style.';
 
-    wp_enqueue_style('dmo140748-style-root', $dir . 'style.root.css', array(), $version, 'all');
-    wp_enqueue_style('dmo140748-style-header', $dir . 'style.header.css', array(), $version, 'all');
-    wp_enqueue_style('dmo140748-style-footer', $dir . 'style.footer.css', array(), $version, 'all');
-    wp_enqueue_style('dmo140748-style-front-page', $dir . 'style.front-page.css', array(), $version, 'all');
-    wp_enqueue_style('dmo140748-style-single', $dir . 'style.single.css', array(), $version, 'all');
-    wp_enqueue_style('dmo140748-style-wordpress', $dir . 'style.wordpress.css', array(), $version, 'all');
-    wp_enqueue_style('dmo140748-style-news', $dir . 'style.news.css', array(), $version, 'all');
+    wp_enqueue_style('dmo140748-style-root', $dir . 'root.css', array(), $version, 'all');
+    wp_enqueue_style('dmo140748-style-header', $dir . 'header.css', array(), $version, 'all');
+    wp_enqueue_style('dmo140748-style-footer', $dir . 'footer.css', array(), $version, 'all');
+    wp_enqueue_style('dmo140748-style-front-page', $dir . 'front-page.css', array(), $version, 'all');
+    wp_enqueue_style('dmo140748-style-single', $dir . 'single.css', array(), $version, 'all');
+    wp_enqueue_style('dmo140748-style-wordpress', $dir . 'wordpress.css', array(), $version, 'all');
+    wp_enqueue_style('dmo140748-style-news', $dir . 'news.css', array(), $version, 'all');
 }
 
 add_action('wp_enqueue_scripts', 'dmo140748_register_styles');
 
 function dmo140748_register_scripts() {
-    $version = wp_get_theme()->get('Version');
-    wp_enqueue_script('dmo140748-script', get_template_directory_uri() . '/assets/js/script.js', array(), $version, array('strategy' => 'defer'));
+    wp_enqueue_script('dmo140748-script', get_template_directory_uri() . '/assets/js/script.js', array(), wp_get_theme()->get('Version'), array('strategy' => 'defer'));
 }
 
 add_action('wp_enqueue_scripts', 'dmo140748_register_scripts');
@@ -117,7 +116,3 @@ function dmo140748_menus() {
 }
 
 add_action('init', 'dmo140748_menus');
-
-if (!current_user_can('administrator')) {
-    add_filter('show_admin_bar', '__return_false');
-}
