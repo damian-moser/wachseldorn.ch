@@ -10,10 +10,10 @@
                               <h1 class="entry-title"><?php the_title(); ?></h1>
                               <div class="entry-meta">
                                    <span>Veröffentlicht am
-                                        <span class="bold"><?php echo get_the_date(); ?></span>
+                                        <strong><?php echo get_the_date(); ?></strong>
                                    </span>
                                    <span>Verfasst von
-                                        <span class="bold"><?php echo ucfirst(get_the_author()); ?></span>
+                                        <strong><?php echo ucfirst(get_the_author()); ?></strong>
                                    </span>
                               </div>
                          </header>
