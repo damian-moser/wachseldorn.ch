@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'Inter Light';
+  src: url(../fonts/Inter-Light.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Regular';
+  src: url(../fonts/Inter-Regular.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Medium';
+  src: url(../fonts/Inter-Medium.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Bold';
+  src: url(../fonts/Inter-Bold.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Black';
+  src: url(../fonts/Inter-Black.ttf);
+  font-display: swap;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*::selection {
+  background-color: var(--c-green);
+  color: var(--c-white);
+}
+
+:root {
+  /* font */
+  font-size: 16px;
+  font-family: var(--f-regular);
+
+  --f-light: 'Inter Light';
+  --f-regular: 'Inter Regular';
+  --f-medium: 'Inter Medium';
+  --f-bold: 'Inter Bold';
+  --f-black: 'Inter Black';
+
+  /* color */
+  --f-c-black: #212529;
+  --f-c-blue: #105ed7;
+
+  --c-yellow: #FFCD00;
+  --c-green: #5C9343;
+
+  --c-white: #ffffff;
+  --c-black: #000000;
+
+  --c-h-yellow: #c9a000;
+  --c-h-green: #416e27;
+
+  --bg-color: #fbfffb;
+  --footer-color: #243a1a;
+
+  /* pixel */
+  --spacing-x: 24px;
+  --max-width: 1400px;
+
+  /* effect */
+  --transition-back-color: background-color 0.2s ease;
+  --box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+}

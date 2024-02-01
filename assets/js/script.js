@@ -1,12 +1,12 @@
 // DESKTOP ITEMS
 const DESKTOP_NAV_ITEMS = document.querySelectorAll('nav .menu-item-has-children');
-const DROPDOWN = document.querySelector("#dropdown");
-const DROPDOWN_CONTENT = document.querySelector("#dropdown-content");
-const CLOSE_BUTTON = document.querySelector('#closeMenu');
+const DROPDOWN = document.querySelector(".dropdown");
+const DROPDOWN_CONTENT = document.querySelector(".dropdown-content");
+const CLOSE_BUTTON = document.querySelector('.close-menu');
 
 // MOBILE ITEMS
 const MOBILE_NAV_ITEMS = document.querySelectorAll('#menu .menu-item-has-children');
-const MOBILE_MENU = document.querySelector("#menu");
+const MOBILE_MENU = document.querySelector(".mobile-menu");
 
 // DESKTOP FUNCTIONS
 DESKTOP_NAV_ITEMS.forEach(item => {
@@ -74,7 +74,7 @@ function changeMobileBars(mobileBars) {
         item.querySelector('ul.sub-menu').style.display = 'none';
     });
 
-    mobileBars.classList.toggle("changeMobile");
+    mobileBars.classList.toggle("mobile-bars");
     if (MOBILE_MENU.style.display === "flex") {
         MOBILE_MENU.classList.toggle("open")
 
@@ -112,7 +112,7 @@ function checkBorderBottom(link, where){
 
 // scroll to top button
 window.onscroll = () => {
-    document.querySelector(".topBtn").style.display = document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 ? "flex" : "none";
+    document.querySelector(".top-btn").style.display = document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 ? "flex" : "none";
 };
 
 function scrollToTop() {
@@ -122,6 +122,6 @@ function scrollToTop() {
 
 function showFilter(btn) {
     btn.remove();
-    document.querySelector("#filter-form form").style.display = "flex";
-    document.querySelector("#reset-filter").style.display = "flex";
+    document.querySelector(".filter-form form").style.display = "flex";
+    document.querySelector(".reset-filter").style.display = "flex";
 }

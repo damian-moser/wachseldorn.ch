@@ -4,7 +4,7 @@
      <section>
           <p style="margin-bottom: 2rem;"><a href="javascript:history.back();" class="btn no-link">← zurück</a></p>
           <?php while (have_posts()) : the_post(); ?>
-               <div id="singe-post">
+               <div class="singe-post">
                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                          <header class="entry-header">
                               <h1 class="entry-title"><?php the_title(); ?></h1>

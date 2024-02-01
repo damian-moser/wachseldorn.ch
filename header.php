@@ -9,20 +9,19 @@
 <body>
 <div id="root">
     <header>
-        <div id="header-content">
-            <div id="wrapper">
-                <div id="wappen">
-                    <a id="home" href="<?php echo home_url(); ?>">
+        <div class="header-content">
+            <div class="wrapper">
+                <div class="wappen">
+                    <a href="<?php echo home_url(); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/wachseldorn.svg" alt="Wappen Wachseldorn">
                         <h4>Gemeinde Wachseldorn</h4>
                     </a>
-                    <div id="mobile" onclick="changeMobileBars(this)">
-                        <div id="bar-top"></div>
-                        <div id="bar-middle"></div>
-                        <div id="bar-bottom"></div>
+                    <div class="mobile" onclick="changeMobileBars(this)">
+                        <div class="first"></div>
+                        <div class="second"></div>
+                        <div class="third"></div>
                     </div>
                 </div>
-                <!-- DESKTOP MENU -->
                 <nav>
                 <?php
                     wp_nav_menu(array(
@@ -33,15 +32,14 @@
                 </nav>
             </div>
         </div>
-        <div id="dropdown" style="display: none;">
-            <div id="dropdown-container">
-                <div id="dropdown-content"></div>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/xmark.svg" id="closeMenu" alt="Menu schliessen" title="schliessen">
+        <div class="dropdown" style="display: none;">
+            <div class="dropdown-container">
+                <div class="dropdown-content"></div>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/xmark.svg" class="close-menu" alt="Menu schliessen" title="schliessen">
             </div>
         </div>
-        <!-- MOBILE MENU -->
-        <div id="menu" style="visibility: hidden; display: none;">
-            <div id="menu-content">
+        <div class="mobile-menu" style="visibility: hidden; display: none;">
+            <div class="menu-content">
                 <?php
                 wp_nav_menu(array(
                     'theme_location' => 'mobile',

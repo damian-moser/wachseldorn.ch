@@ -1,68 +1,60 @@
-#singe-post {
+.singe-post article {
+  border-radius: 8px;
 
-  article {
-    border-radius: 8px;
+  .entry-header {
+    margin-bottom: 1rem;
+    user-select: text;
 
-    .entry-header {
-      margin-bottom: 1rem;
-      user-select: text;
+    .entry-meta {
+      display: flex;
+      justify-content: space-between;
 
-      .entry-meta {
-        display: flex;
-        justify-content: space-between;
-
-        .bold {
-          font-family: var(--f-bold);
-        }
+      .bold {
+        font-family: var(--f-bold);
       }
     }
+  }
 
-    .entry-content {
+  .entry-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .post-thumbnail img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      max-height: 350px;
+      object-fit: cover;
+    }
+
+    .post-content .wp-block-file {
+      margin: 2rem 0;
       display: flex;
-      flex-direction: column;
       gap: 1rem;
 
-      .post-thumbnail {
-        img {
-          width: 100%;
-          height: auto;
-          border-radius: 8px;
-          max-height: 350px;
-          object-fit: cover;
+      & * {
+        margin: 0;
+      }
+
+      a {
+        padding: 12px;
+        background-color: var(--c-green);
+        font-size: 1rem;
+        border-radius: 2rem;
+        transition: var(--transition-back-color) !important;
+        color: var(--f-c-black) !important;
+
+        &:hover {
+          background-color: var(--c-h-green);
         }
       }
 
-      .post-content {
-        .wp-block-file {
-          margin: 2rem 0;
+      .wp-block-file__button {
+        background-color: var(--c-yellow);
 
-          & * {
-            margin: 0;
-          }
-
-          display: flex;
-          gap: 1rem;
-
-          a {
-            padding: 12px;
-            background-color: var(--c-green);
-            font-size: 1rem;
-            border-radius: 2rem;
-            transition: var(--transition-back-color) !important;
-            color: var(--f-c-black) !important;
-
-            &:hover {
-              background-color: var(--c-h-green);
-            }
-          }
-
-          .wp-block-file__button {
-            background-color: var(--c-yellow);
-
-            &:hover {
-              background-color: var(--c-h-yellow);
-            }
-          }
+        &:hover {
+          background-color: var(--c-h-yellow);
         }
       }
     }

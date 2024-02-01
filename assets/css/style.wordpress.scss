@@ -25,7 +25,7 @@ main {
 
     form {
       input, textarea, select {
-        padding: .5rem;
+        padding: 0.5rem;
         border: 3px #ddd solid;
         outline: none;
         border-radius: 4px;
@@ -46,7 +46,7 @@ main {
         transition: background-color 0.2s ease;
         border: none;
         cursor: pointer;
-        padding: .5rem;
+        padding: 0.5rem;
 
         &:hover {
           background-color: var(--c-h-yellow);
@@ -81,8 +81,7 @@ main {
       }
     }
 
-    // Entferne Animation bei Elementen die es nicht haben sollen
-    .ngg-galleryoverview a, #filter-form a, .not-found a {
+    .ngg-galleryoverview a, .filter-form a, .not-found a {
       display: unset;
       width: unset;
       color: unset;
@@ -94,7 +93,7 @@ main {
       }
     }
 
-    #filter-form a {
+    .filter-form a {
       &:hover {
         text-decoration: none;
       }

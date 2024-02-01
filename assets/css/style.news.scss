@@ -1,4 +1,4 @@
-#news-container {
+.news-container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -27,6 +27,7 @@
 
       .post-image {
         overflow: hidden;
+        border-radius: 8px;
 
         img {
           width: 100%;
@@ -37,7 +38,7 @@
         }
       }
 
-      .news-container {
+      .news-wrapper {
         padding: 12px;
 
         .news-info {
@@ -63,8 +64,7 @@
 }
 
 @media only screen and (max-width: 900px) {
-  #news-container article {
+  .news-container article {
     width: 100%;
-
   }
 }

@@ -9,7 +9,7 @@
           ?>
      </div>
 
-     <?php dmo140748_get_pagination(); ?>
+     <?php theme_get_pagination(); ?>
      <section>
           <h1><?php the_title(); ?></h1>
           <?php

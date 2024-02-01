@@ -67,20 +67,20 @@ main section a:after {
 main section a:hover:after {
   transform: scaleX(1);
 }
-main section .ngg-galleryoverview a, main section #filter-form a, main section .not-found a {
+main section .ngg-galleryoverview a, main section .filter-form a, main section .not-found a {
   display: unset;
   width: unset;
   color: unset;
 }
-main section .ngg-galleryoverview a:after, main section #filter-form a:after, main section .not-found a:after {
+main section .ngg-galleryoverview a:after, main section .filter-form a:after, main section .not-found a:after {
   display: unset;
   content: "";
   border-bottom: unset;
 }
-main section #filter-form a:hover {
+main section .filter-form a:hover {
   text-decoration: none;
 }
-main section #filter-form a::after {
+main section .filter-form a::after {
   content: "";
 }
 main section h1, main section h2, main section h3, main section h4, main section h5, main section h6 {

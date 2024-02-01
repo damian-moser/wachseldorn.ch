@@ -1,4 +1,3 @@
-/* Footer */
 .footer-waves {
   width: 100%;
   height: auto;
@@ -27,7 +26,7 @@ footer .footer-content .footer-navigation {
   gap: 1rem;
 }
 footer .footer-content .footer-navigation img {
-  width: 48px;
+  width: 3rem;
 }
 footer .footer-content .footer-info {
   display: flex;
