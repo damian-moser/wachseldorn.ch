@@ -5,7 +5,7 @@ const DROPDOWN_CONTENT = document.querySelector(".dropdown-content");
 const CLOSE_BUTTON = document.querySelector('.close-menu');
 
 // MOBILE ITEMS
-const MOBILE_NAV_ITEMS = document.querySelectorAll('#menu .menu-item-has-children');
+const MOBILE_NAV_ITEMS = document.querySelectorAll('.menu .menu-item-has-children');
 const MOBILE_MENU = document.querySelector(".mobile-menu");
 
 // DESKTOP FUNCTIONS
@@ -112,7 +112,9 @@ function checkBorderBottom(link, where){
 
 // scroll to top button
 window.onscroll = () => {
-    document.querySelector(".top-btn").style.display = document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 ? "flex" : "none";
+    document.querySelector(".top-btn").style.display =
+        document.body.scrollTop > 150 ||
+        document.documentElement.scrollTop > 150 ? "flex" : "none";
 };
 
 function scrollToTop() {
