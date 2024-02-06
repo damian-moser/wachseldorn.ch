@@ -1,12 +1,12 @@
 // DESKTOP ITEMS
-const DESKTOP_NAV_ITEMS = document.querySelectorAll('nav .menu-item-has-children');
-const DROPDOWN = document.querySelector(".dropdown");
-const DROPDOWN_CONTENT = document.querySelector(".dropdown-content");
-const CLOSE_BUTTON = document.querySelector('.close-menu');
+const DESKTOP_NAV_ITEMS = document.querySelectorAll('#root header nav .menu-item-has-children');
+const DROPDOWN = document.querySelector("#root header .dropdown");
+const DROPDOWN_CONTENT = document.querySelector("#root header .dropdown .dropdown-content");
+const CLOSE_BUTTON = document.querySelector('#root header .dropdown .close-menu');
 
 // MOBILE ITEMS
-const MOBILE_NAV_ITEMS = document.querySelectorAll('.menu .menu-item-has-children');
-const MOBILE_MENU = document.querySelector(".mobile-menu");
+const MOBILE_NAV_ITEMS = document.querySelectorAll('.mobile-menu .menu .menu-item-has-children');
+const MOBILE_MENU = document.querySelector("#root header .mobile-menu");
 
 // DESKTOP FUNCTIONS
 DESKTOP_NAV_ITEMS.forEach(item => {
