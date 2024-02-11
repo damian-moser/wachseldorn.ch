@@ -1,0 +1,46 @@
+.search-results-content h1 {
+  text-align: center;
+}
+.search-results-content .searchform {
+  display: flex;
+  justify-content: center;
+}
+.search-results-content .searchform div {
+  width: 75%;
+  display: flex;
+  gap: 0.5rem;
+}
+.search-results-content .searchform div input {
+  width: 75%;
+}
+.search-results-content .searchform div input[type=submit] {
+  width: 25%;
+}
+.search-results-content .search-results {
+  margin-top: 1rem;
+}
+.search-results-content .search-results article {
+  padding: 1rem 0;
+}
+.search-results-content .search-results article .news-info {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.search-results-content .search-results article h2 {
+  color: var(--f-c-black);
+}
+.search-results-content .search-results hr {
+  border: 1px #dddddd solid;
+}
+.search-results-content .nothing-found {
+  text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .search-results-content .searchform div {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.search-results.css.map */

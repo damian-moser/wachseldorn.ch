@@ -24,6 +24,7 @@ header .header-content .wrapper .wappen {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
 }
 header .header-content .wrapper .wappen a {
   display: flex;
@@ -37,7 +38,23 @@ header .header-content .wrapper .wappen a h4 {
   color: var(--f-c-black);
   font-family: var(--f-bold);
 }
-header .header-content .wrapper .wappen .mobile {
+header .header-content .wrapper .wappen .search-mobile {
+  display: flex;
+  gap: 2rem;
+}
+header .header-content .wrapper .wappen .search-mobile .search-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-content .wrapper .wappen .search-mobile .search-header svg {
+  fill: var(--f-c-black);
+  transition: fill 0.25s ease;
+}
+header .header-content .wrapper .wappen .search-mobile .search-header:hover svg {
+  fill: #5d5d5d;
+}
+header .header-content .wrapper .wappen .search-mobile .mobile {
   flex-flow: column wrap;
   justify-content: space-between;
   height: 2.5rem;
@@ -45,7 +62,7 @@ header .header-content .wrapper .wappen .mobile {
   cursor: pointer;
   display: none;
 }
-header .header-content .wrapper .wappen .mobile div {
+header .header-content .wrapper .wappen .search-mobile .mobile div {
   height: 5px;
   background: var(--f-c-black);
   border-radius: 5px;
@@ -53,14 +70,14 @@ header .header-content .wrapper .wappen .mobile div {
   transform-origin: left;
   transition: all 0.5s;
 }
-header .header-content .wrapper .wappen .mobile-bars .first {
+header .header-content .wrapper .wappen .search-mobile .mobile-bars .first {
   transform: rotate(45deg);
 }
-header .header-content .wrapper .wappen .mobile-bars .second {
+header .header-content .wrapper .wappen .search-mobile .mobile-bars .second {
   transform: translateX(1rem);
   opacity: 0;
 }
-header .header-content .wrapper .wappen .mobile-bars .third {
+header .header-content .wrapper .wappen .search-mobile .mobile-bars .third {
   transform: rotate(-45deg);
 }
 header .header-content .wrapper nav li a {

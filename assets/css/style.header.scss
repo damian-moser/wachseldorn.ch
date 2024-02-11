@@ -26,6 +26,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 1rem;
 
         a {
           display: flex;
@@ -42,36 +43,58 @@ header {
           }
         }
 
-        .mobile {
-          flex-flow: column wrap;
-          justify-content: space-between;
-          height: 2.5rem;
-          width: 2.5rem;
-          cursor: pointer;
-          display: none;
+        .search-mobile {
+          display: flex;
+          gap: 2rem;
 
-          div {
-            height: 5px;
-            background: var(--f-c-black);
-            border-radius: 5px;
-            margin: 3px 0;
-            transform-origin: left;
-            transition: all 0.5s;
-          }
-        }
+          .search-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-        .mobile-bars {
-          .first {
-            transform: rotate(45deg);
+            svg {
+              fill: var(--f-c-black);
+              transition: fill 0.25s ease;
+            }
+
+            &:hover {
+              svg {
+                fill: #5d5d5d;
+              }
+            }
           }
 
-          .second {
-            transform: translateX(1rem);
-            opacity: 0;
+          .mobile {
+            flex-flow: column wrap;
+            justify-content: space-between;
+            height: 2.5rem;
+            width: 2.5rem;
+            cursor: pointer;
+            display: none;
+
+            div {
+              height: 5px;
+              background: var(--f-c-black);
+              border-radius: 5px;
+              margin: 3px 0;
+              transform-origin: left;
+              transition: all 0.5s;
+            }
           }
 
-          .third {
-            transform: rotate(-45deg);
+          .mobile-bars {
+            .first {
+              transform: rotate(45deg);
+            }
+
+            .second {
+              transform: translateX(1rem);
+              opacity: 0;
+            }
+
+            .third {
+              transform: rotate(-45deg);
+            }
           }
         }
       }

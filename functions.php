@@ -98,6 +98,7 @@ function theme_register_styles() {
     wp_enqueue_style('theme-style-news', $dir . 'news.css', array(), $version, 'all');
     wp_enqueue_style('theme-style-mobile-menu', $dir . 'mobile-menu.css', array(), $version, 'all');
     wp_enqueue_style('theme-style-desktop-menu', $dir . 'desktop-menu.css', array(), $version, 'all');
+    wp_enqueue_style('theme-style-search-results', $dir . 'search-results.css', array(), $version, 'all');
 }
 
 add_action('wp_enqueue_scripts', 'theme_register_styles');
