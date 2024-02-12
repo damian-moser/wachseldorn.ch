@@ -18,7 +18,7 @@
     width: 80%;
 
     ul.menu > li.menu-item > a:first-of-type {
-      color: var(--f-c-black);
+      color: var(--f-c-primary);
       font-size: 1.25rem;
       font-family: var(--f-medium);
       width: 100%;
@@ -49,7 +49,7 @@
         font-size: 1rem;
         width: 100%;
         text-align: left;
-        color: var(--f-c-black);
+        color: var(--f-c-primary);
         display: flex;
         align-items: center;
         justify-content: space-between;

@@ -12,6 +12,7 @@
 }
 .search-results-content .searchform div input {
   width: 75%;
+  font-family: var(--f-regular);
 }
 .search-results-content .searchform div input[type=submit] {
   width: 25%;
@@ -28,7 +29,7 @@
   gap: 0.25rem;
 }
 .search-results-content .search-results article h2 {
-  color: var(--f-c-black);
+  color: var(--f-c-primary);
 }
 .search-results-content .search-results hr {
   border: 1px #dddddd solid;

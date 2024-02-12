@@ -45,7 +45,7 @@
                 <a class="link-white" href="<?= home_url(); ?>">Gemeinde Wachseldorn</a>
                 <a class="link-white" href="https://damian.work" target="_blank" rel="noopener">&copy;2024 by Damian</a>
                 <div>
-                    <a class="link-white" href="<?php echo home_url() . '/datenschutz' ?>">Datenschutzerklärung</a><span style="color: #ffffff;"> |</span>
+                    <a class="link-white" href="<?php echo home_url() . '/datenschutz' ?>">Datenschutzerklärung</a><span style="color: var(--f-c-secondary);"> |</span>
                     <a class="link-white" href="<?php echo home_url() . '/impressum' ?>">Impressum</a>
                 </div>
             </div>

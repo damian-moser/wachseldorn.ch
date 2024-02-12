@@ -35,7 +35,7 @@ header .header-content .wrapper .wappen a img {
   width: 3rem;
 }
 header .header-content .wrapper .wappen a h4 {
-  color: var(--f-c-black);
+  color: var(--f-c-primary);
   font-family: var(--f-bold);
 }
 header .header-content .wrapper .wappen .search-mobile {
@@ -48,7 +48,7 @@ header .header-content .wrapper .wappen .search-mobile .search-header {
   align-items: center;
 }
 header .header-content .wrapper .wappen .search-mobile .search-header svg {
-  fill: var(--f-c-black);
+  fill: var(--f-c-primary);
   transition: fill 0.25s ease;
 }
 header .header-content .wrapper .wappen .search-mobile .search-header:hover svg {
@@ -64,7 +64,7 @@ header .header-content .wrapper .wappen .search-mobile .mobile {
 }
 header .header-content .wrapper .wappen .search-mobile .mobile div {
   height: 5px;
-  background: var(--f-c-black);
+  background: var(--f-c-primary);
   border-radius: 5px;
   margin: 3px 0;
   transform-origin: left;
@@ -83,7 +83,7 @@ header .header-content .wrapper .wappen .search-mobile .mobile-bars .third {
 header .header-content .wrapper nav li a {
   display: flex;
   border-bottom: 3px transparent solid;
-  color: var(--f-c-black);
+  color: var(--f-c-primary);
 }
 header .header-content .wrapper nav li a:hover {
   border-bottom-color: var(--c-yellow) !important;

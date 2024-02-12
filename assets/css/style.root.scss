@@ -50,7 +50,7 @@ a {
 
 .green {
   background-color: var(--c-green);
-  color: #ffffff;
+  color: var(--f-c-secondary);
 
   &:hover {
     background-color: var(--c-h-green);
@@ -105,7 +105,7 @@ body {
   border-bottom-color: var(--c-yellow) !important;
 }
 .border-bottom-mobile {
-  border-bottom-color: var(--f-c-black) !important;
+  border-bottom-color: var(--f-c-primary) !important;
 }
 
 .top-btn {

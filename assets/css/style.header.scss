@@ -38,7 +38,7 @@ header {
           }
 
           h4 {
-            color: var(--f-c-black);
+            color: var(--f-c-primary);
             font-family: var(--f-bold);
           }
         }
@@ -53,7 +53,7 @@ header {
             align-items: center;
 
             svg {
-              fill: var(--f-c-black);
+              fill: var(--f-c-primary);
               transition: fill 0.25s ease;
             }
 
@@ -74,7 +74,7 @@ header {
 
             div {
               height: 5px;
-              background: var(--f-c-black);
+              background: var(--f-c-primary);
               border-radius: 5px;
               margin: 3px 0;
               transform-origin: left;
@@ -103,7 +103,7 @@ header {
         li a {
           display: flex;
           border-bottom: 3px transparent solid;
-          color: var(--f-c-black);
+          color: var(--f-c-primary);
 
           &:hover {
             border-bottom-color: var(--c-yellow) !important;

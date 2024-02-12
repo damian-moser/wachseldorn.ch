@@ -39,11 +39,11 @@
 
 *::selection {
   background-color: var(--c-green);
-  color: #ffffff;
+  color: var(--f-c-secondary);
 }
 
 :root {
-  /* font */
+  // font
   font-size: 16px;
   font-family: var(--f-regular);
 
@@ -53,9 +53,10 @@
   --f-bold: 'Inter Bold';
   --f-black: 'Inter Black';
 
-  /* color */
-  --f-c-black: #212529;
-  --f-c-blue: #105ed7;
+  // color
+  --f-c-primary: #212529;
+  --f-c-secondary: #ffffff;
+  --f-c-link: #105ed7;
 
   --c-yellow: #FFCD00;
   --c-green: #5C9343;
@@ -66,11 +67,11 @@
   --bg-color: #f5f5f5;
   --footer-color: #243a1a;
 
-  /* pixel */
+  // pixel
   --spacing-x: 24px;
   --max-width: 1400px;
 
-  /* effect */
+  // effect
   --transition-back-color: background-color 0.2s ease;
   --box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
 }

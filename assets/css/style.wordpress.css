@@ -49,18 +49,18 @@ main section ol, main section ul {
   margin-left: 2rem;
 }
 main section p {
-  color: var(--f-c-black);
+  color: var(--f-c-primary);
   margin: 0.75rem 0;
 }
 main section a {
-  color: var(--f-c-blue);
+  color: var(--f-c-link);
   display: inline-block;
   width: fit-content;
 }
 main section a:after {
   display: block;
   content: "";
-  border-bottom: solid 2px var(--f-c-blue);
+  border-bottom: solid 2px var(--f-c-link);
   transform: scaleX(0);
   transition: transform 0.25s ease-in-out;
 }
@@ -85,7 +85,7 @@ main section .filter-form a::after {
 }
 main section h1, main section h2, main section h3, main section h4, main section h5, main section h6 {
   font-size: 2rem;
-  color: var(--f-c-black);
+  color: var(--f-c-primary);
   font-family: var(--f-bold);
   margin: 1rem 0;
 }
@@ -146,7 +146,7 @@ main section .wp-block-file a {
   transition: var(--transition-back-color);
   font-size: 1rem;
   border-radius: 2em;
-  color: #ffffff;
+  color: var(--f-c-secondary);
 }
 main section .wp-block-file a:hover {
   opacity: 1;
@@ -155,7 +155,7 @@ main section .wp-block-file a:hover {
 main section .wp-block-file .wp-element-button {
   text-decoration: underline;
   background-color: var(--c-yellow);
-  color: var(--f-c-black);
+  color: var(--f-c-primary);
 }
 main section .wp-block-file .wp-element-button:hover {
   background-color: var(--c-h-yellow);
@@ -165,7 +165,7 @@ main section .wp-block-file .wp-element-button:hover {
   padding: 12px;
   background-color: var(--c-yellow);
   border-radius: 8px;
-  color: var(--f-c-black);
+  color: var(--f-c-primary);
   transition: var(--transition-back-color);
 }
 .btn::after {
@@ -177,14 +177,14 @@ main section .wp-block-file .wp-element-button:hover {
 }
 
 .link {
-  color: var(--f-c-blue);
+  color: var(--f-c-link);
   display: inline-block;
   width: fit-content;
 }
 .link:after {
   display: block;
   content: "";
-  border-bottom: solid 2px var(--f-c-blue);
+  border-bottom: solid 2px var(--f-c-link);
   transform: scaleX(0);
   transition: transform 0.25s ease-in-out;
 }
@@ -193,14 +193,14 @@ main section .wp-block-file .wp-element-button:hover {
 }
 
 .link-white {
-  color: #ffffff;
+  color: var(--f-c-secondary);
   display: inline-block;
   width: fit-content;
 }
 .link-white:after {
   display: block;
   content: "";
-  border-bottom: solid 2px #ffffff;
+  border-bottom: solid 2px var(--f-c-secondary);
   transform: scaleX(0);
   transition: transform 0.25s ease-in-out;
 }

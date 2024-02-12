@@ -50,13 +50,13 @@
   gap: 0.35rem;
 }
 .news-container article a .news-wrapper .news-info strong {
-  color: var(--f-c-black);
+  color: var(--f-c-primary);
 }
 .news-container article a .news-wrapper h2 {
-  color: var(--f-c-black);
+  color: var(--f-c-primary);
 }
 .news-container article a .news-wrapper .news-content {
-  color: var(--f-c-black);
+  color: var(--f-c-primary);
 }
 
 @media only screen and (max-width: 900px) {

@@ -40,7 +40,7 @@ footer {
         justify-content: space-between;
         gap: 1rem;
         flex-wrap: wrap;
-        color: #ffffff;
+        color: var(--f-c-secondary);
 
         h2 {
           margin-bottom: 1rem;
@@ -66,14 +66,14 @@ footer {
         gap: 3rem;
 
         a {
-          color: #ffffff;
+          color: var(--f-c-secondary);
           display: inline-block;
           width: fit-content;
 
           &:after {
             display: block;
             content: '';
-            border-bottom: solid 2px #ffffff;
+            border-bottom: solid 2px var(--f-c-secondary);
             transform: scaleX(0);
             transition: transform 0.25s ease-in-out;
           }
@@ -97,7 +97,7 @@ footer {
       }
 
       hr {
-        border-color: #ffffff;
+        border-color: var(--f-c-secondary);
       }
 
       .footer-cred {
