@@ -45,7 +45,8 @@
                 <a class="link-white" href="<?= home_url(); ?>">Gemeinde Wachseldorn</a>
                 <a class="link-white" href="https://damian.work" target="_blank" rel="noopener">&copy;2024 by Damian</a>
                 <div>
-                    <a class="link-white" href="<?php echo home_url() . '/datenschutz' ?>">Datenschutzerklärung</a><span style="color: var(--f-c-secondary);"> |</span>
+                    <a class="link-white" href="<?php echo home_url() . '/datenschutz' ?>">Datenschutzerklärung</a>
+                    <span> | </span>
                     <a class="link-white" href="<?php echo home_url() . '/impressum' ?>">Impressum</a>
                 </div>
             </div>
@@ -53,7 +54,6 @@
         <?php wp_footer(); ?>
     </div>
 </footer>
-
     <button class="top-btn" onclick="scrollToTop()">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 448 512">
             <path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/>

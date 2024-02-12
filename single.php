@@ -2,7 +2,9 @@
 
 <main>
      <section>
-          <p style="margin-bottom: 2rem;"><a href="javascript:history.back();" class="btn no-link">← zurück</a></p>
+          <p class="back-btn">
+               <a href="javascript:history.back();" class="btn no-link">← zurück</a>
+          </p>
           <?php while (have_posts()) : the_post(); ?>
                <div class="singe-post">
                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

@@ -62,6 +62,7 @@ header .dropdown {
       width: 28px;
       height: 28px;
       cursor: pointer;
+      fill: var(--f-c-primary);
 
       &:hover {
         opacity: 0.75;

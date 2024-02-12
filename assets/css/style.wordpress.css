@@ -45,6 +45,9 @@ main section form input[type=submit] {
 main section form input[type=submit]:hover {
   background-color: var(--c-h-yellow);
 }
+main section .back-btn {
+  margin-bottom: 2rem;
+}
 main section ol, main section ul {
   margin-left: 2rem;
 }

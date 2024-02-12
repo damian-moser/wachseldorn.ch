@@ -56,6 +56,7 @@ header .dropdown .dropdown-container .close-menu {
   width: 28px;
   height: 28px;
   cursor: pointer;
+  fill: var(--f-c-primary);
 }
 header .dropdown .dropdown-container .close-menu:hover {
   opacity: 0.75;

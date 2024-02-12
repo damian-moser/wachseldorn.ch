@@ -91,5 +91,8 @@ footer .footer-wrapper .footer-content .footer-cred {
   flex-wrap: wrap;
   gap: 1rem;
 }
+footer .footer-wrapper .footer-content .footer-cred span {
+  color: var(--f-c-secondary);
+}
 
 /*# sourceMappingURL=style.footer.css.map */

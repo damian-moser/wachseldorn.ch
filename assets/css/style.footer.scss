@@ -105,6 +105,10 @@ footer {
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 1rem;
+
+        span {
+          color: var(--f-c-secondary);
+        }
       }
     }
   }

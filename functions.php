@@ -90,7 +90,6 @@ function theme_register_styles() {
 
     wp_enqueue_style('theme-style-init', $dir . 'init.css', array(), $version, 'all');
     wp_enqueue_style('theme-style-root', $dir . 'root.css', array(), $version, 'all');
-    wp_enqueue_style('theme-style-svg', $dir . 'svg.css', array(), $version, 'all');
     wp_enqueue_style('theme-style-header', $dir . 'header.css', array(), $version, 'all');
     wp_enqueue_style('theme-style-footer', $dir . 'footer.css', array(), $version, 'all');
     wp_enqueue_style('theme-style-front-page', $dir . 'front-page.css', array(), $version, 'all');

@@ -1,4 +1,6 @@
-# WordPress-Theme 
+# WordPress theme
 ### Gemeinde Wachseldorn
-###### Ein WordPress-Theme gemacht für die Gemeinde Wachseldorn BE.
-#### ©2024 by Damian Moser
+
+A WordPress theme made for Gemeinde Wachseldorn, BE.
+
+###### **©2023 - today by [Damian Moser](https://damian.work)**
